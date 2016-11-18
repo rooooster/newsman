@@ -8,6 +8,6 @@ description: ''
 og-image: ''
 ---
 
-[site](/site)
+[site](/site/)
 
-[landing](/landing)
+[landing](/landing/)
