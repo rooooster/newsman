@@ -1,0 +1,14 @@
+// Variables
+@import '-vars';
+
+// Vendor
+@import 'vendor/svg-icons/font';
+@import '../node_modules/coriolan-ui/coriolan-ui';
+
+// UX
+@import 'base';
+
+// Components
+@import '_components/Header/style';
+@import '_components/Footer/style';
+
