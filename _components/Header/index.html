@@ -1,10 +1,4 @@
 <div class="header">
-    <a href="/" class="header__logo">
-        Logo
-    </a>
-    <div class="header__menu">
-        {% for i in site.data.Header.config %}
-            <a href="#" class="header__menu-item">{{ i.name }}</a>
-        {% endfor %}
-    </div>
+    <a href="/" class="header__logo">Logo</a>
+    {% include Menu/index.html %}
 </div>

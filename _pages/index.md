@@ -8,6 +8,8 @@ description: ''
 og-image: ''
 ---
 
-[site](/site/)
-
-[landing](/landing/)
+[index]({{ site.baseurl }}/)
+|
+[site]({{ site.baseurl }}/site/)
+|
+[landing]({{ site.baseurl }}/landing/)

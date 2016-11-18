@@ -1,17 +1,9 @@
 .header {
-    font-size: 20px;
-    padding: 35px 10px;
-    position: relative;
 
     &__logo {
-        display: block;
-        margin: auto;
-        max-width: 250px;
-        height: auto;
+    }
 
-        &-img {
-            max-width: 100%;
-            height: auto;
-        }
+    .menu {
+        display: inline-block;
     }
 }
