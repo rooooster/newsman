@@ -41,13 +41,13 @@
 @function icon-char($filename) {
   $char: "";
 
-  @if $filename == hot {
+  @if $filename == facebook {
   $char: "\E001";
 }
-  @if $filename == new {
+  @if $filename == linkedin {
   $char: "\E002";
 }
-  @if $filename == play {
+  @if $filename == twitter {
   $char: "\E003";
 }
 
@@ -65,12 +65,12 @@
 }
 }
 
-.icon-hot {
-  @include icon(hot);
+.icon-facebook {
+  @include icon(facebook);
 }
-.icon-new {
-  @include icon(new);
+.icon-linkedin {
+  @include icon(linkedin);
 }
-.icon-play {
-  @include icon(play);
+.icon-twitter {
+  @include icon(twitter);
 }
