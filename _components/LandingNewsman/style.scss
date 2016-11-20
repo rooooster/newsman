@@ -1,4 +1,30 @@
 .landing-newsman {
+    background-color: #fff;
+    padding: 0 80px 80px;
+
+    h1,
+    h2 {
+        color: #ff6700;
+        font-size: 55px;
+        font-weight: 300;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        margin: 20px 0;
+        margin-left: 300px;
+        font-size: 19px;
+        color: #50545a;
+
+    }
+
+    &__btn-wrap {
+        display: flex;
+        justify-content: center;
+    }
 
     &__btn {
         background: #425da8;
