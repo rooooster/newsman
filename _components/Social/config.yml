@@ -1,9 +1,12 @@
 - {
     name: "facebook",
-}
-- {
-    name: "linkedin",
+    url: "#",
 }
 - {
     name: "twitter",
+    url: "#",
+}
+- {
+    name: "linkedin",
+    url: "#",
 }

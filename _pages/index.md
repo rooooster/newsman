@@ -1,15 +1,13 @@
 ---
-layout: default
+layout: index
 permalink: /
 
 title: ''
 description: ''
 
-og-image: ''
+og-image: 'http://rooooster.com/content/newsman/home.jpg'
 ---
 
-[index]({{ site.baseurl }}/)
-|
-[site]({{ site.baseurl }}/site/)
-|
-[landing]({{ site.baseurl }}/landing/)
+# [Home Page]({{ site.baseurl }}/home/)
+
+# [Landing Page]({{ site.baseurl }}/landing/)

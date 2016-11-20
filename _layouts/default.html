@@ -1,5 +1,4 @@
 ---
-layout: compress
 ---
 
 <!DOCTYPE html>
@@ -11,16 +10,22 @@ layout: compress
 
     <title>{{ page.title }}</title>
     <meta name="description" content="{{ page.description }}">
-    <meta property="og:image" content="{{ site.baseurl }}/assets/img/og-image/{{ page.og-image }}">
+    <meta property="og:image" content="{{ page.og-image }}">
 
     <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
     <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicons/favicon-32.png">
-    <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/favicons/favicon-144.jpg">
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/favicons/favicon-144.png">
 </head>
 <body>
 
     <div class="main-container">
+
+        {% include Header/index.html %}
+
         {{ content }}
+
+        {% include Footer/index.html %}
+
     </div>
 
     <script src="{{ site.baseurl }}/assets/js/all.js"></script>

@@ -1,0 +1,15 @@
+.landing-newsman {
+
+    &__btn {
+        background: #425da8;
+        color: #96b7ff;
+        border-radius: 5px;
+        font-size: 26px;
+        padding: 13px 34px;
+        text-transform: uppercase;
+        // box-shadow: 4px 3px 0 #2f468f;
+        border: 0 solid #2f468f;
+        border-right-width: 4px;
+        border-bottom-width: 3px;
+    }
+}
