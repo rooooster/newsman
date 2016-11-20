@@ -41,14 +41,20 @@
 @function icon-char($filename) {
   $char: "";
 
-  @if $filename == facebook {
+  @if $filename == close {
   $char: "\E001";
 }
-  @if $filename == linkedin {
+  @if $filename == facebook {
   $char: "\E002";
 }
-  @if $filename == twitter {
+  @if $filename == linkedin {
   $char: "\E003";
+}
+  @if $filename == menu {
+  $char: "\E004";
+}
+  @if $filename == twitter {
+  $char: "\E005";
 }
 
 @return $char;
@@ -65,11 +71,17 @@
 }
 }
 
+.icon-close {
+  @include icon(close);
+}
 .icon-facebook {
   @include icon(facebook);
 }
 .icon-linkedin {
   @include icon(linkedin);
+}
+.icon-menu {
+  @include icon(menu);
 }
 .icon-twitter {
   @include icon(twitter);
