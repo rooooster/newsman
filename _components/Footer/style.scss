@@ -1,9 +1,26 @@
 .footer {
+    background: #fff;
+    padding: 35px;
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    box-shadow: 1px 1px 0px #d9dbdc;
+
+    &__nav-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    }
+
 
     &__logo {
     }
 
     .menu {
         display: inline-block;
+        margin-top: 20px;
     }
 }

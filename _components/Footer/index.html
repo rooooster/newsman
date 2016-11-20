@@ -1,5 +1,9 @@
 <div class="footer">
-    <a href="{{ site.baseurl }}/" class="footer__logo">Logo</a>
-    {% include Menu/index.html %}
+    <div class="footer__nav-wrap">
+        <a href="{{ site.baseurl }}/" class="footer__logo">
+            <img src="{{ site.baseurl }}/assets/img/logo/logo-footer.png">
+        </a>
+        {% include Menu/index.html %}
+    </div>
     {% include Social/index.html %}
 </div>
