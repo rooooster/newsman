@@ -1,16 +1,16 @@
 @font-face {
-  font-family: "svg-font";
-  src: url('./../fonts/svg-font.eot');
-  src: url('./../fonts/svg-font.eot?#iefix') format('eot'),
-  url('./../fonts/svg-font.woff2') format('woff2'),
-  url('./../fonts/svg-font.woff') format('woff'),
-  url('./../fonts/svg-font.ttf') format('truetype'),
-  url('./../fonts/svg-font.svg#svg-font') format('svg');
+  font-family: "SvgIcons";
+  src: url('./../fonts/SvgIcons/SvgIcons.eot');
+  src: url('./../fonts/SvgIcons/SvgIcons.eot?#iefix') format('eot'),
+  url('./../fonts/SvgIcons/SvgIcons.woff2') format('woff2'),
+  url('./../fonts/SvgIcons/SvgIcons.woff') format('woff'),
+  url('./../fonts/SvgIcons/SvgIcons.ttf') format('truetype'),
+  url('./../fonts/SvgIcons/SvgIcons.svg#SvgIcons') format('svg');
 }
 
 .icon, [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "svg-font" !important;
+  font-family: "SvgIcons" !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -24,7 +24,7 @@
 }
 
 @mixin icon-styles {
-          font-family: "svg-font";
+          font-family: "SvgIcons";
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
           font-style: normal;

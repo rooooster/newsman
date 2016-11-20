@@ -80,14 +80,14 @@ gulp.task('js-min', ['js-concat'], function () {
 
 // gulp font
 gulp.task('font', function () {
-    var fontName = 'svg-font';
+    var fontName = 'SvgIcons';
 
     return gulp.src('assets/img/svg-icons/*.svg')
         .pipe(iconfontCss({
             fontName: fontName,
             path: '_scss/vendor/svg-icons/_template.scss',
-            targetPath: '../../_scss/vendor/svg-icons/_font.scss',
-            fontPath: './../fonts/'
+            targetPath: '../../../_scss/vendor/svg-icons/_svg-icons.scss',
+            fontPath: './../fonts/SvgIcons/'
         }))
         .pipe(iconfont({
             fontName: fontName,
@@ -95,7 +95,7 @@ gulp.task('font', function () {
             formats: ['svg', 'ttf', 'eot', 'woff', 'woff2'],
             normalize: true
         }))
-        .pipe(gulp.dest('assets/fonts/'));
+        .pipe(gulp.dest('assets/fonts/SvgIcons/'));
 });
 
 // gulp watch
