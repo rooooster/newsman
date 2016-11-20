@@ -4,5 +4,5 @@ permalink: /landing/
 
 title: 'Landing Newsman'
 description: 'Landing Newsman'
-og-image: 'http://rooooster.com/content/newsman/home.jpg'
+og-image: 'http://rooooster.com/newsman/assets/img/og-image/newsman.jpg'
 ---
