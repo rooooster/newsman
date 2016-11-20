@@ -2,23 +2,24 @@
 layout: default
 ---
 <style>
-    figure {background:#ccc;padding:10px;display:inline-block;}
-    img {display:block;margin:0 auto 10px;max-width:100%;}
-    figcaption {font-size:10px;}
-    footer {}
+    section.index figure {background:#ccc;padding:10px;display:inline-block;}
+    section.index img {display:block;margin:0 auto 10px;max-width:100%;}
+    section.index figcaption {font-size:10px;}
 </style>
 
 {{ content }}
 
 <h3>All project images:</h3>
 
-{% for file in site.static_files %}
-    {% if file.path contains 'assets/img' %}
-        <a href="{{ site.baseurl }}{{ file.path }}">
-            <figure>
-                <img src="{{ site.baseurl }}{{ file.path }}">
-                <figcaption>{{ file.path }}</figcaption>
-            </figure>
-        </a>
-    {% endif %}
-{% endfor %}
+<section class="index">
+    {% for file in site.static_files %}
+        {% if file.path contains 'assets/img' %}
+            <a href="{{ site.baseurl }}{{ file.path }}">
+                <figure>
+                    <img src="{{ site.baseurl }}{{ file.path }}">
+                    <figcaption>{{ file.path }}</figcaption>
+                </figure>
+            </a>
+        {% endif %}
+    {% endfor %}
+</section>
