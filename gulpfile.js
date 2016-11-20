@@ -62,19 +62,19 @@ gulp.task('js-concat', ['sass'], function () {
             '_components/**/*.js',
             '_js/*.js'
         ])
-        .pipe(concat('all.js'))
+        .pipe(concat('bundle.js'))
         .pipe(gulp.dest('assets/js/'));
 });
 
 // gulp js-min
 gulp.task('js-min', ['js-concat'], function () {
-    return gulp.src('assets/js/all.js')
+    return gulp.src('assets/js/bundle.js')
         .pipe(plumber(function(error) {
             gutil.log(gutil.colors.red(error.message));
             this.emit('end');
         }))
         .pipe(uglify())
-        .pipe(concat('all.min.js'))
+        .pipe(concat('bundle.min.js'))
         .pipe(gulp.dest('assets/js/'));
 });
 

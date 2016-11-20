@@ -13,9 +13,14 @@ a {
     text-decoration: none;
 }
 
-p,
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
     margin: 0;
 }
 
@@ -25,10 +30,16 @@ img {
 
 .main-container {
     width: 100%;
-    max-width: $XL;
+    max-width: 1306px;
     flex: 1 0 auto;
     align-self: center;
     background: #f2f2f2;
-    padding: 0 65px;
     box-sizing: border-box;
+    overflow: hidden;
+
+    &__inner {
+        width: 100%;
+        max-width: 1164px;
+        margin: 0 auto;
+    }
 }

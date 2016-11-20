@@ -20,12 +20,14 @@ layout: compress
 <body>
 
     <div class="main-container">
-        {% include Header/index.html %}
-        {{ content }}
-        {% include Footer/index.html %}
+        <div class="main-container__inner">
+            {% include Header/index.html %}
+            {{ content }}
+            {% include Footer/index.html %}
+        </div>
     </div>
 
-    <script src="{{ site.baseurl }}/assets/js/all.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/bundle.min.js"></script>
 
     {% include Analytics/google-analytics.html %}
     {% include Analytics/yandex-metrika.html %}
