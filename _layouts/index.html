@@ -2,16 +2,18 @@
 layout: default
 ---
 <style>
-    section.index figure {background:#ccc;padding:10px;display:inline-block;}
-    section.index img {display:block;margin:0 auto 10px;max-width:100%;}
-    section.index figcaption {font-size:10px;}
+    section.index {font-family:monospace;}
+    section.index figure {background:#ccc;padding:5px;display:inline-block;margin:1em .1em;background-image:repeating-linear-gradient(135deg,rgba(255,255,255,0),rgba(255,255,255,0)4px,rgba(255,255,255,.1)4px,rgba(255,255,255,.1)8px);}
+    section.index img {display:block;margin:0 auto 5px;max-width:100%;}
+    section.index figcaption {font-size:10px;padding:5px;background:rgba(0,0,0,.1);text-align:center;}
 </style>
 
-{{ content }}
-
-<h3>All project images:</h3>
-
 <section class="index">
+
+    {{ content }}
+
+    <h3>All project images:</h3>
+
     {% for file in site.static_files %}
         {% if file.path contains 'assets/img' %}
             <a href="{{ site.baseurl }}{{ file.path }}">
@@ -22,4 +24,5 @@ layout: default
             </a>
         {% endif %}
     {% endfor %}
+
 </section>
