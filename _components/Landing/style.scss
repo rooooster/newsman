@@ -28,10 +28,40 @@
     }
 
     &__header {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        padding-top: 40px;
 
         p {
             font-size: 24px;
             margin: 0 0 20px;
+        }
+
+        span {
+            color: #ff6700;
+        }
+    }
+
+    &__img {
+        width: calc(30% - 80px);
+        display: block;
+        padding: 0 40px;
+    }
+
+    &__text {
+        width: 70%;
+    }
+
+    &__example {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        &--justify {
+            justify-content: space-around;
         }
     }
 
@@ -39,19 +69,21 @@
         margin-bottom: 60px;
 
         &-item {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 55px;
 
             h2 {
                 color: #ff6700;
                 font-size: 55px;
                 position: relative;
-                // display: inline-block;
-                margin-bottom: 20px;
+                margin-bottom: 60px;
 
                 &:after {
                     content: '';
                     position: absolute;
-                    left: 102%;
-                    bottom: 11px;
+                    // left: 102%;
+                    bottom: 15px;
                     width: 113px;
                     height: 4px;
                     background: url(../img/content/dots-line.png) no-repeat;
@@ -60,9 +92,13 @@
 
             p {
                 margin: 0 0 20px;
-                // margin-left: 300px;
                 font-size: 19px;
             }
+        }
+
+        &-content {
+            display: flex;
+            align-items: flex-start;
         }
     }
 
