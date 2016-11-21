@@ -7,10 +7,11 @@
 @import 'vendor/kuppa-font/kuppa';
 @import '../node_modules/coriolan-ui/coriolan-ui';
 
+// UI
+@import 'ui/buttons';
+
 // UX
 @import 'base';
-
-// Components
 @import '_components/Header/style';
 @import '_components/Menu/style';
 @import '_components/Features/style';

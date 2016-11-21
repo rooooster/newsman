@@ -1,0 +1,22 @@
+@mixin btn {
+    background: #425da8;
+    color: #96b7ff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 0 solid #2f468f;
+    border-right-width: 4px;
+    border-bottom-width: 3px;
+    font-size: 26px;
+    padding: 13px 34px;
+
+    &:hover {
+    }
+
+    &:active {
+    }
+}
+
+@mixin btn--large {
+    font-size: 33px;
+    padding: 25px 43px;
+}
