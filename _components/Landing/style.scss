@@ -7,6 +7,17 @@
         text-align: center;
         background: url(../img/background/bg-mails.png) center bottom no-repeat;
         padding-bottom: 140px;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            right: -1px;
+            width: 1px;
+            height: 77px;
+            background: #dbdcdd;
+        }
     }
 
     &__content {
