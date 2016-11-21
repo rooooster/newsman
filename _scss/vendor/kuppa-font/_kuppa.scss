@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'kupparegular';
+    src: url('../fonts/Kuppa/kuppa_regular-webfont.eot');
+    src: url('../fonts/Kuppa/kuppa_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Kuppa/kuppa_regular-webfont.woff2') format('woff2'),
+         url('../fonts/Kuppa/kuppa_regular-webfont.woff') format('woff'),
+         url('../fonts/Kuppa/kuppa_regular-webfont.ttf') format('truetype'),
+         url('../fonts/Kuppa/kuppa_regular-webfont.svg#kupparegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kuppa_basicregular';
+    src: url('../fonts/Kuppa/kuppa_basic_regular-webfont.eot');
+    src: url('../fonts/Kuppa/kuppa_basic_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Kuppa/kuppa_basic_regular-webfont.woff2') format('woff2'),
+         url('../fonts/Kuppa/kuppa_basic_regular-webfont.woff') format('woff'),
+         url('../fonts/Kuppa/kuppa_basic_regular-webfont.ttf') format('truetype'),
+         url('../fonts/Kuppa/kuppa_basic_regular-webfont.svg#kuppa_basicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
