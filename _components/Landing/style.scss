@@ -22,16 +22,26 @@
 
     &__content {
         background-color: #fff;
-        padding: 0 80px 80px;
+        padding: 0 20px 80px;
         box-shadow: 1px 2px 0px #d9dbdc;
-        margin-bottom: 60px;
+
+        @include media(M) {
+            padding: 0 80px 80px;
+            margin-bottom: 60px;
+        }
     }
 
     &__header {
         display: flex;
+        flex-direction: column;
         align-items: center;
         box-sizing: border-box;
-        padding-top: 40px;
+        padding-top: 20px;
+
+        @include media(M) {
+            flex-direction: row;
+            padding-top: 40px;
+        }
 
         p {
             font-size: 24px;
@@ -44,24 +54,55 @@
     }
 
     &__img {
-        width: calc(30% - 80px);
-        display: block;
-        padding: 0 40px;
+        width: 50%;
+        padding-bottom: 20px;
+
+        @include media(M) {
+            width: calc(30% - 80px);
+            display: block;
+            padding: 0 40px;
+        }
     }
 
     &__text {
-        width: 70%;
+        width: 100%;
+
+        @include media(M) {
+            width: 70%;
+        }
     }
 
     &__example {
         display: flex;
-        align-items: flex-start;
         width: 100%;
+        flex-direction: column;
+        align-items: center;
         justify-content: space-between;
-        margin-top: 50px;
+        // margin-top: 20px;
+
+        @include media(M) {
+            margin-top: 50px;
+            flex-direction: row;
+            align-items: flex-start;
+        }
 
         &--justify {
             justify-content: space-around;
+        }
+
+
+        &-img {
+            width: 100%;
+            margin-top: 10px;
+
+            @include media(M) {
+                width: 50%;
+                padding: 0 10px 0 0;
+            }
+
+            @include media(XL) {
+                width: auto;
+            }
         }
     }
 
@@ -71,22 +112,36 @@
         &-item {
             display: flex;
             flex-wrap: wrap;
-            margin-top: 55px;
+            margin-top: 25px;
+
+            @include media(M) {
+                margin-top: 55px;
+            }
+
 
             h2 {
                 color: #ff6700;
-                font-size: 55px;
+                font-size: 32px;
                 position: relative;
-                margin-bottom: 60px;
+                margin-bottom: 20px;
+
+                @include media(M) {
+                    font-size: 55px;
+                    margin-bottom: 60px;
+                }
 
                 &:after {
                     content: '';
                     position: absolute;
                     // left: 102%;
-                    bottom: 15px;
+                    bottom: 9px;
                     width: 113px;
                     height: 4px;
                     background: url(../img/content/dots-line.png) no-repeat;
+
+                    @include media(M) {
+                        bottom: 15px;
+                    }
                 }
             }
 
@@ -98,7 +153,15 @@
 
         &-content {
             display: flex;
-            align-items: flex-start;
+            flex-direction: column;
+            align-items: center;
+
+            @include media(M) {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+
+
         }
     }
 
