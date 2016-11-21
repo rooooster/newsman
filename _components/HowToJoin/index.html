@@ -1,38 +1,42 @@
 <div class="howtojoin">
 
-    <h2>How to join</h2>
+    <h2 class="howtojoin__title">How to join</h2>
 
-    <form class="howtojoin__form">
-        <div class="howtojoin__form-row">
-            <label>Имя:</label>
-            <input type="name" name="name">
-        </div>
-        <div class="howtojoin__form-row">
-            <label>Email:</label>
-            <input type="email" name="email">
-        </div>
-        <div class="howtojoin__form-row">
-            <label>RSS вашего сайта:</label>
-            <input type="text" name="rss">
-        </div>
-        <div class="howtojoin__form-row">
-            <label>Подтвердите владение этим сайтом:</label>
-            <input type="text" name="owner">
-        </div>
-        <div class="howtojoin__form-row">
-            <input class="howtojoin__form-submit" type="submit" value="регистрация">
-        </div>
-    </form>
+    <div class="howtojoin__container">
 
-    <ul>
-        <li><p>это submit form</p></li>
-        <li><p>Подсказка: Подготовить RSS ленту, с содержанием, которое вы хотите использовать в письмах, как минимум это:</p></li>
-        <li><p>заголовок, картинка, краткое описание новости, id статьи или уникальный url;</p></li>
-        <li><p>Подсказка: Добавьте на сайте страницу с адресом: domain.com/someuniqid.html или добавьте поддомен n.domain.com с записью: 68.152.13.111</p></li>
-        <li><p>Что будет дальше?</p></li>
-        <li><p>Мы отправим доступ в учетную запись Mailfire - https://admin.mailfire.io/</p></li>
-        <li><p>Вы размещаете в футере сайта код:</p></li>
-    </ul>
+        <form class="howtojoin__form">
+            <div class="howtojoin__form-row">
+                <label for="name">Имя:</label>
+                <input type="name" id="name" name="name">
+            </div>
+            <div class="howtojoin__form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="howtojoin__form-row">
+                <label for="rss">RSS вашего сайта:</label>
+                <input type="text" id="rss" name="rss">
+            </div>
+            <div class="howtojoin__form-row">
+                <label for="owner">Подтвердите владение этим сайтом:</label>
+                <input type="text" id="owner" name="owner">
+            </div>
+            <div class="howtojoin__form-row">
+                <input class="howtojoin__form-submit" type="submit" value="регистрация">
+            </div>
+        </form>
+
+        <ul class="howtojoin__tips">
+            <li><p>это submit form</p></li>
+            <li><p>Подсказка: Подготовить RSS ленту, с содержанием, которое вы хотите использовать в письмах, как минимум это:</p></li>
+            <li><p>заголовок, картинка, краткое описание новости, id статьи или уникальный url;</p></li>
+            <li><p>Подсказка: Добавьте на сайте страницу с адресом: domain.com/someuniqid.html или добавьте поддомен n.domain.com с записью: 68.152.13.111</p></li>
+            <li><p>Что будет дальше?</p></li>
+            <li><p>Мы отправим доступ в учетную запись Mailfire - https://admin.mailfire.io/</p></li>
+            <li><p>Вы размещаете в футере сайта код:</p></li>
+        </ul>
+
+    </div>
 
     <div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
     <span class="nt">&lt;body&gt;</span>

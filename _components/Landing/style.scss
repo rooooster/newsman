@@ -2,8 +2,7 @@
     padding: 50px 0 0;
 
     &__title {
-        color: #ff6700;
-        font-size: 55px;
+        @include title;
         text-align: center;
         background: url(../img/background/bg-mails.png) center bottom no-repeat;
         padding-bottom: 140px;
@@ -30,21 +29,8 @@
         &-item {
 
             h2 {
-                color: #ff6700;
-                font-size: 55px;
-                position: relative;
-                // display: inline-block;
-                margin-bottom: 20px;
-
-                &:after {
-                    content: '';
-                    position: absolute;
-                    left: 102%;
-                    bottom: 11px;
-                    width: 113px;
-                    height: 4px;
-                    background: url(../img/content/dots-line.png) no-repeat;
-                }
+                @include title;
+                @include title--dotted;
             }
 
             p {

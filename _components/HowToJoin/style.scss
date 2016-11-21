@@ -1,18 +1,22 @@
 .howtojoin {
-    font-family: 'kupparegular', sans-serif;
-    font-family: 'kuppa_basicregular', sans-serif;
 
     &__title {
+        @include title;
+        @include title--dotted;
+    }
 
+    &__container {
+        position: relative;
     }
 
     &__form {
         background: #96b7ff;
         padding: 20px 40px 20px;
         border-radius: 5px;
+        max-width: 630px;
+        margin: 0 auto 20px;
 
         &-row {
-            // width: 100%;
             margin: 0 auto 20px;
             text-align: center;
         }
@@ -22,7 +26,6 @@
             color: #fff;
             font-size: 33px;
             text-align: left;
-            // width: 100%;
             display: block;
         }
 
@@ -39,5 +42,10 @@
             @include btn;
             @include btn--large;
         }
+    }
+
+    &__tips {
+        font-family: 'kupparegular', sans-serif;
+        font-family: 'kuppa_basicregular', sans-serif;
     }
 }
