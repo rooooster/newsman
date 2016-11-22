@@ -13,10 +13,6 @@
 
     @include media(M) {
         margin-bottom: 60px;
-
-        &:after {
-            bottom: 16px;
-        }
     }
 
     &:after {
