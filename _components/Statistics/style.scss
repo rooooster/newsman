@@ -1,16 +1,21 @@
 .statistics {
     font-size: 22px;
     text-align: center;
+    margin-bottom: 50px;
 
     &__title {
         @include title;
         @include title--dotted;
     }
 
+    &__header {
+    }
+
     &__customers {
         background: url(../img/content/statistics-customers.png) center top no-repeat;
         padding-top: 164px;
         // position: relative;
+        margin-bottom: 96px;
 
         // img {
         //     position: absolute;
@@ -20,9 +25,68 @@
         //     transform: translate3d(-50%,0,0);
         // }
 
-        h4 span {
-            color: #ff6700;
-            font-size: 48px;
+        h4 {
+            large {
+                color: #ff6700;
+                font-size: 48px;
+            }
+        }
+    }
+
+    &__footer {
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                margin-bottom: 60px;
+                width: 100%;
+
+                @include media(M) {
+                    width: (100%/3);
+                }
+
+                img {
+                    margin-bottom: 10px;
+                }
+
+                p {
+
+                    large {
+                        display: block;
+                        color: #ff6700;
+                        font-size: 55px;
+                    }
+                }
+
+                &:first-child {
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                        left: 50%;
+                        top: 0;
+                        width: auto;
+                        transform: translate3d(-50%,0,0);
+                    }
+
+                    p {
+                        position: relative;
+                        max-width: 200px;
+                        padding: 40px 0 86px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        small {
+            color: #050000;
+            font-size: 18px;
         }
     }
 }
