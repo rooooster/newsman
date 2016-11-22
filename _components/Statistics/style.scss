@@ -1,0 +1,28 @@
+.statistics {
+    font-size: 22px;
+    text-align: center;
+
+    &__title {
+        @include title;
+        @include title--dotted;
+    }
+
+    &__customers {
+        background: url(../img/content/statistics-customers.png) center top no-repeat;
+        padding-top: 164px;
+        // position: relative;
+
+        // img {
+        //     position: absolute;
+        //     left: 50%;
+        //     top: 0;
+        //     width: auto;
+        //     transform: translate3d(-50%,0,0);
+        // }
+
+        h4 span {
+            color: #ff6700;
+            font-size: 48px;
+        }
+    }
+}
