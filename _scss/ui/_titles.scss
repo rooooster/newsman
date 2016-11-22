@@ -1,20 +1,31 @@
 @mixin title {
     color: #ff6700;
-    font-size: 55px;
+    font-size: 32px;
+
+    @include media(M) {
+        font-size: 55px;
+    }
 }
 
 @mixin title--dotted {
     position: relative;
-    // display: inline-block;
     margin-bottom: 20px;
+
+    @include media(M) {
+        margin-bottom: 60px;
+    }
 
     &:after {
         content: '';
         position: absolute;
-        left: 102%;
+        // left: 102%;
         bottom: 11px;
         width: 113px;
         height: 4px;
         background: url(../img/content/dots-line.png) no-repeat;
+
+        @include media(M) {
+            bottom: 15px;
+        }
     }
 }

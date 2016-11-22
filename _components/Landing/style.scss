@@ -6,20 +6,102 @@
         text-align: center;
         background: url(../img/background/bg-mails.png) center bottom no-repeat;
         padding-bottom: 140px;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            right: -1px;
+            width: 1px;
+            height: 77px;
+            background: #dbdcdd;
+        }
     }
 
     &__content {
         background-color: #fff;
-        padding: 0 80px 80px;
+        padding: 0 20px 80px;
         box-shadow: 1px 2px 0px #d9dbdc;
-        margin-bottom: 60px;
+
+        @include media(M) {
+            padding: 0 80px 80px;
+            margin-bottom: 60px;
+        }
     }
 
     &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        padding-top: 20px;
+
+        @include media(M) {
+            flex-direction: row;
+            padding-top: 40px;
+        }
 
         p {
             font-size: 24px;
             margin: 0 0 20px;
+        }
+
+        span {
+            color: #ff6700;
+        }
+    }
+
+    &__img {
+        width: 50%;
+        padding-bottom: 20px;
+
+        @include media(M) {
+            width: calc(30% - 80px);
+            display: block;
+            padding: 0 40px;
+        }
+    }
+
+    &__text {
+        width: 100%;
+
+        @include media(M) {
+            width: 70%;
+        }
+    }
+
+    &__example {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        // margin-top: 20px;
+
+        @include media(M) {
+            margin-top: 50px;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        &--justify {
+            justify-content: space-around;
+        }
+
+
+        &-img {
+            width: 100%;
+            margin-top: 10px;
+
+            @include media(M) {
+                width: 50%;
+                padding: 0 10px 0 0;
+            }
+
+            @include media(XL) {
+                width: auto;
+            }
         }
     }
 
@@ -27,6 +109,14 @@
         margin-bottom: 60px;
 
         &-item {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 25px;
+
+            @include media(M) {
+                margin-top: 55px;
+            }
+
 
             h2 {
                 @include title;
@@ -35,9 +125,21 @@
 
             p {
                 margin: 0 0 20px;
-                // margin-left: 300px;
                 font-size: 19px;
             }
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include media(M) {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+
+
         }
     }
 
