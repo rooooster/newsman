@@ -1,29 +1,101 @@
 .statistics {
     font-size: 22px;
-    text-align: center;
     margin-bottom: 50px;
+    text-align: center;
 
     &__title {
         @include title;
         @include title--dotted;
+        text-align: left;
+
+        @include media(M) {
+            margin-bottom: 0;
+        }
     }
 
     &__header {
+        margin-bottom: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+
+        &-newsman {
+            width: 100%;
+
+            @include media(M) {
+                width: (100%*1/5);
+            }
+
+            img {
+                margin-bottom: 60px;
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            width: 100%;
+
+            @include media(M) {
+                width: (100%*4/5);
+            }
+
+            li {
+                margin-bottom: 60px;
+                width: 100%;
+                @include clearfix;
+
+                @include media(M) {
+                    text-align: right;
+                    width: (100%/4);
+                }
+
+                p {
+                    margin-bottom: 30px;
+
+                    @include media(M) {
+                        float: right;
+                        margin-right: 90px;
+                    }
+
+                    large {
+                        font-size: 48px;
+                        display: block;
+                        white-space: nowrap;
+
+                        @include media(M) {
+                            float: right;
+                        }
+                    }
+                }
+
+                img {
+
+                    @include media(M) {
+                        float: right;
+                    }
+                }
+            }
+        }
     }
 
     &__customers {
-        background: url(../img/content/statistics-customers.png) center top no-repeat;
-        padding-top: 164px;
-        // position: relative;
+        // background: url(../img/content/statistics-customers.png) center top no-repeat;
+        padding-top: 148px;
         margin-bottom: 96px;
+        position: relative;
 
-        // img {
-        //     position: absolute;
-        //     left: 50%;
-        //     top: 0;
-        //     width: auto;
-        //     transform: translate3d(-50%,0,0);
-        // }
+        img {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: auto;
+            transform: translate3d(-50%,0,0);
+        }
 
         h4 {
             large {
@@ -72,6 +144,7 @@
                         top: 0;
                         width: auto;
                         transform: translate3d(-50%,0,0);
+                        margin: 0;
                     }
 
                     p {
