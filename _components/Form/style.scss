@@ -1,0 +1,34 @@
+.form {
+    background: #96b7ff;
+    padding: 20px 40px 20px;
+    border-radius: 5px;
+    max-width: 630px;
+    margin: 0 auto 20px;
+
+    &__row {
+        margin: 0 auto 20px;
+        text-align: center;
+    }
+
+    label {
+        cursor: pointer;
+        color: #fff;
+        font-size: 33px;
+        text-align: left;
+        display: block;
+    }
+
+    input[type=name],
+    input[type=email],
+    input[type=text] {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 26px;
+        text-align: left;
+    }
+
+    &__submit {
+        @include btn;
+        @include btn--large;
+    }
+}
