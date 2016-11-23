@@ -1,26 +1,62 @@
 .footer {
     background: #fff;
-    padding: 35px;
+    padding: 25px 15px;
     display: flex;
-    // flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     box-shadow: 1px 1px 0px #d9dbdc;
 
+    @include media(M) {
+        align-items: flex-end;
+        padding: 25px;
+        padding-right: 15px;
+    }
+
+    @include media(L) {
+        padding: 35px;
+        padding-right: 15px;
+    }
+
     &__nav-wrap {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+
+        @include media(M) {
+            flex-direction: row;
+        }
     }
 
 
     &__logo {
+
+        @include media(M) {
+            width: 135px;
+        }
+
+        @include media(L) {
+            width: 235px;
+        }
+
+        @include media(XL) {
+            width: auto;
+        }
     }
 
     .menu {
         display: inline-block;
         margin-top: 20px;
+
+        @include media(M) {
+            margin-top: 0;
+        }
+
+        @include media(L) {
+            margin-top: 20px;
+        }
     }
 }
