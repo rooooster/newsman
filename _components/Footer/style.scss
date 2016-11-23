@@ -2,17 +2,21 @@
     background: #fff;
     padding: 35px;
     display: flex;
-    // flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     box-shadow: 1px 1px 0px #d9dbdc;
 
+    @include media(M) {
+        align-items: flex-end;
+    }
+
+
     &__nav-wrap {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
     }
 
 
