@@ -1,23 +1,24 @@
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-<span class="nt">&lt;script&gt;</span>
-        <span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">w</span><span class="p">,</span> <span class="nx">d</span><span class="p">,</span> <span class="nx">f</span><span class="p">)</span> <span class="p">{</span>
-                <span class="nx">w</span><span class="p">[</span><span class="nx">f</span><span class="p">]</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{(</span><span class="nx">w</span><span class="p">[</span><span class="nx">f</span><span class="p">].</span><span class="nx">q</span> <span class="o">=</span> <span class="nx">w</span><span class="p">[</span><span class="nx">f</span><span class="p">].</span><span class="nx">q</span> <span class="o">||</span> <span class="p">[]).</span><span class="nx">push</span><span class="p">(</span><span class="nx">arguments</span><span class="p">)};</span>
-                <span class="nx">w</span><span class="p">[</span><span class="s1">'_mf_object_name'</span><span class="p">]</span> <span class="o">=</span> <span class="nx">f</span><span class="p">;</span>
-                <span class="kd">var</span> <span class="nx">l</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">'script'</span><span class="p">);</span>
-                <span class="nx">l</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="s1">'https://scripts.mailfire.io/build/widget/wrapper.js'</span><span class="p">;</span>
-                <span class="nx">l</span><span class="p">.</span><span class="nx">type</span> <span class="o">=</span> <span class="s1">'text/javascript'</span><span class="p">;</span>
-                <span class="nx">l</span><span class="p">.</span><span class="nx">async</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
-                <span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="nx">d</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">'script'</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
-                <span class="nx">s</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">insertBefore</span><span class="p">(</span><span class="nx">l</span><span class="p">,</span> <span class="nx">s</span><span class="p">);</span>
-        <span class="p">})(</span><span class="nb">window</span><span class="p">,</span> <span class="nb">document</span><span class="p">,</span> <span class="s1">'mf'</span><span class="p">);</span>
-        <span class="nx">mf</span><span class="p">.</span><span class="nx">project</span> <span class="o">=</span> <span class="mi">18</span><span class="p">;</span>
-        <span class="nx">mf</span><span class="p">(</span><span class="s1">'init'</span><span class="p">,</span> <span class="s1">'auto'</span><span class="p">);</span>
-<span class="nt">&lt;/script&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
+<pre class="code">
+&lt;html&gt;
+&lt;body&gt;
+&lt;script&gt;
+        (function (w, d, f) {
+        w[f] = function () {(w[f].q = w[f].q || []).push(arguments)};
+        w['_mf_object_name'] = f;
+        var l = document.createElement('script');
+        l.src = 'https://scripts.mailfire.io/build/widget/wrapper.js';
+        l.type = 'text/javascript';
+        l.async = true;
+        var s = d.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(l, s);
+        })(window, document, 'mf');
+        mf.project = 18;
+        mf('init', 'auto');
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
  
 b) «Пиксель» аналитики
  
-<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://n.mailfire.io/online/1"</span> <span class="na">style=</span><span class="s">"display:none"</span> <span class="nt">/&gt;</span>
-</code></pre></div>
+&lt;img src="https://n.mailfire.io/online/1" style="display:none"/&gt;
+</pre>
