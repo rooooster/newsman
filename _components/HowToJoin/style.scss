@@ -6,7 +6,48 @@
     }
 
     &__tips {
-        // font-family: 'kupparegular', sans-serif;
-        // font-family: 'kuppa_basicregular', sans-serif;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+
+                p {
+                    // font-family: 'kupparegular', sans-serif;
+                    // font-family: 'kuppa_basicregular', sans-serif;
+                    font-size: 33px;
+                }
+            }
+        }
+
+        &-tip1 {
+            background: rgba(orange,.1);
+        }
+
+        &-tip2 {
+            background: rgba(orange,.2);
+        }
+
+        &-tip3 {
+            background: rgba(orange,.3);
+        }
+
+        &-tip4 {
+            background: rgba(orange,.4);
+        }
+
+        &-tip5 {
+            background: rgba(orange,.5);
+        }
+
+        &-tip6 {
+            background: rgba(orange,.6);
+        }
+
+        &-tip7 {
+            background: rgba(orange,.7);
+        }
     }
 }
