@@ -4,8 +4,21 @@
     &__item {
         color: #a7a9ac;
         text-decoration: none;
-        padding-left: 40px;
-        font-size: 22px;
+        font-size: 18px;
         line-height: 1;
+        padding: 10px;
+        display: block;
+        text-align: center;
+
+        @include media(M) {
+            display: inline-block;
+            padding: 0 10px;
+        }
+
+        @include media(L) {
+            display: inline-block;
+            padding: 0 20px;
+            font-size: 22px;
+        }
     }
 }

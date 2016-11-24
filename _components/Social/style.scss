@@ -3,6 +3,14 @@
     &__item {
         font-size: 35px;
         color: #a7afb5;
-        margin-left: 20px;
+        margin: 0 10px;
+
+        @include media(M) {
+            margin: 0 10px;
+        }
+
+        @include media(L) {
+            margin: 0 20px;
+        }
     }
 }

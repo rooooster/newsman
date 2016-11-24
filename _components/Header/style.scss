@@ -1,11 +1,32 @@
 .header {
     background: #fff;
-    padding: 65px 45px;
+    padding: 25px 15px;
     box-shadow: 1px 2px 0 #dbdcdd;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 
+    @include media(M) {
+        padding: 45px 15px 45px 25px;
+    }
+
+    @include media(XL) {
+        padding: 65px 25px 65px 45px;
+    }
+
     &__logo {
+        width: 120px;
+
+        @include media(L) {
+            width: auto;
+        }
+    }
+
+    .menu {
+        display: none;
+
+        @include media(M) {
+            display: inline-block;
+        }
     }
 }
