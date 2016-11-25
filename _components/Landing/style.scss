@@ -4,29 +4,29 @@
     &__title {
         @include title;
         text-align: center;
-        background: url(../img/background/bg-mails.png) center bottom no-repeat;
-        padding-bottom: 140px;
         position: relative;
-
-        &:after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            right: -1px;
-            width: 1px;
-            height: 77px;
-            background: #dbdcdd;
-        }
+        z-index: 100;
+        margin-bottom: 130px;
     }
 
     &__content {
         background-color: #fff;
         padding: 0 20px 80px;
         box-shadow: 1px 2px 0px #d9dbdc;
+        position: relative;
+        z-index: 90;
 
         @include media(M) {
             padding: 0 80px 80px;
             margin-bottom: 60px;
+        }
+
+        &-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate3d(0,-100%,0);
+            max-width: 1165px;
         }
     }
 
@@ -77,7 +77,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        // margin-top: 20px;
 
         @include media(M) {
             margin-top: 50px;
@@ -117,7 +116,6 @@
                 margin-top: 55px;
             }
 
-
             h2 {
                 @include title;
                 @include title--dotted;
@@ -138,8 +136,6 @@
                 flex-direction: row;
                 align-items: flex-start;
             }
-
-
         }
     }
 

@@ -1,5 +1,5 @@
 .features {
-    margin: 20px auto 50px;
+    margin: 20px auto 40px;
 
     &__header {
         text-align: center;
@@ -19,17 +19,7 @@
 
     &__clients {
         position: relative;
-        background: url(../img/background/bg-mails.png) center bottom no-repeat;
-
-        &:after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            right: -1px;
-            width: 1px;
-            height: 77px;
-            background: #dbdcdd;
-        }
+        z-index: 100;
 
         ul {
             list-style: none;
@@ -50,15 +40,24 @@
     }
 
     &__list {
-        padding: 40px;
+        padding: 100px 20px 40px;
         background: #fff;
         box-shadow: 1px 2px 0 #dbdcdd;
         display: flex;
         flex-wrap: wrap;
+        position: relative;
+        z-index: 90;
+
+        &-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate3d(0,-100%,0);
+            max-width: 1165px;
+        }
 
         &-item {
             display: flex;
-            // flex-wrap: wrap;
             width: 100%;
             align-items: center;
 
@@ -73,7 +72,7 @@
             figure {
                 margin: 0;
                 width: 80px;
-                // display: block;
+                padding: 0 20px;
 
                 @include media(S) {
                     width: 120px;
@@ -85,14 +84,14 @@
                 }
 
                 img {
-                    // width: auto;
+                    display: block;
                 }
             }
 
             ul {
                 list-style: none;
-                margin: 0 0 20px 20px;
-                padding: 0;
+                margin: 0;
+                padding: 0 20px 20px;
 
                 li {
 
