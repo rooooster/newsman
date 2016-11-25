@@ -1,4 +1,5 @@
 .howtojoin {
+    margin-bottom: 100px;
 
     &__title {
         @include title;
@@ -15,39 +16,55 @@
             li {
 
                 p {
+                    font-size: 33px;
                     // font-family: 'kupparegular', sans-serif;
                     // font-family: 'kuppa_basicregular', sans-serif;
-                    font-size: 33px;
                 }
             }
         }
 
         &-tip1 {
-            background: rgba(orange,.1);
+            background: rgba(#ff6700,.1);
+            padding: 30px;
         }
 
         &-tip2 {
-            background: rgba(orange,.2);
+            background: rgba(#ff6700,.2);
+            padding: 30px;
         }
 
         &-tip3 {
-            background: rgba(orange,.3);
+            background: rgba(#ff6700,.3);
+            padding: 30px;
         }
 
         &-tip4 {
-            background: rgba(orange,.4);
+            background: rgba(#ff6700,.4);
+            padding: 30px;
         }
 
         &-tip5 {
-            background: rgba(orange,.5);
+            background: rgba(#ff6700,.5);
+            padding: 30px;
         }
 
         &-tip6 {
-            background: rgba(orange,.6);
+            background: rgba(#ff6700,.6);
+            padding: 30px;
         }
 
         &-tip7 {
-            background: rgba(orange,.7);
+            text-align: center;
+
+            p {
+                color: #ff6700;
+                margin-bottom: 20px;
+            }
+
+            img {
+                display: block;
+                margin: 0 auto;
+            }
         }
     }
 }
