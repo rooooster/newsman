@@ -1,13 +1,14 @@
 @mixin btn {
     background: #425da8;
     color: #96b7ff;
-    border-radius: 5px;
     text-transform: uppercase;
+    font-weight: 700;
     border: 0 solid #2f468f;
-    border-right-width: 4px;
+    border-right-width: 3px;
     border-bottom-width: 3px;
     font-size: 26px;
     padding: 13px 34px;
+    border-radius: 6px;
 
     &:hover {
     }
@@ -17,6 +18,9 @@
 }
 
 @mixin btn--large {
+    border-right-width: 4px;
+    border-bottom-width: 4px;
     font-size: 33px;
-    padding: 25px 43px;
+    padding: 25px 44px;
+    border-radius: 10px;
 }

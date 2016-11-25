@@ -1,13 +1,19 @@
 .form {
     background: #96b7ff;
-    padding: 20px 40px 20px;
-    border-radius: 5px;
-    max-width: 630px;
+    padding: 80px 42px 40px;
+    border-radius: 10px;
+    max-width: 670px;
     margin: 0 auto 20px;
+    box-sizing: border-box;
+    box-shadow: 2px 3px 1px #b4b6b8;
 
     &__row {
-        margin: 0 auto 20px;
+        margin-bottom: 24px;
         text-align: center;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     label {
@@ -16,6 +22,8 @@
         font-size: 33px;
         text-align: left;
         display: block;
+        margin-bottom: 6px;
+        font-weight: 700;
     }
 
     input[type=name],
@@ -23,12 +31,21 @@
     input[type=text] {
         width: 100%;
         box-sizing: border-box;
-        font-size: 26px;
+        font-size: 33px;
         text-align: left;
+        box-shadow: inset 2px 3px 1px #b6b8ba;
+        border: none;
+        padding: 8px 16px;
+        box-sizing: border-box;
+
+        &:focus {
+            outline: none;
+        }
     }
 
     &__submit {
         @include btn;
         @include btn--large;
+        margin-top: 34px;
     }
 }
