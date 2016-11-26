@@ -7,6 +7,7 @@
     }
 
     &__tips {
+        padding-top: 70px;
 
         ul {
             list-style: none;
@@ -14,18 +15,28 @@
             padding: 0;
 
             li {
+                position: relative;
+                margin-bottom: 40px;
 
                 p {
                     font-size: 33px;
                     // font-family: 'kupparegular', sans-serif;
                     // font-family: 'kuppa_basicregular', sans-serif;
+
+                    .is-blue {
+                        color: #425da8;
+                    }
+
+                    .is-orange {
+                        color: #ff6700;
+                    }
                 }
             }
         }
 
         &-tip1 {
-            background: rgba(#ff6700,.1);
-            padding: 30px;
+            // background: rgba(#ff6700,.1);
+            // padding: 30px;
         }
 
         &-tip2 {
@@ -57,7 +68,6 @@
             text-align: center;
 
             p {
-                color: #ff6700;
                 margin-bottom: 20px;
             }
 
@@ -66,5 +76,32 @@
                 margin: 0 auto;
             }
         }
+    }
+
+    &__tip1 {
+        position: absolute;
+        top: -84px;
+        right: 13%;
+        // transform: translate3d(0,-20px,0);
+
+        &-head {
+            position: absolute;
+            bottom: -20px;
+            right: 100%;
+            padding-right: 16px;
+        }
+
+        &-arrow {
+            position: absolute;
+            top: 20px;
+            right: -24px;
+        }
+    }
+
+    &__pointer {
+        position: absolute;
+        bottom: 0;
+        left: 36.5%;
+        transform: translate3d(0,30px,0);
     }
 }

@@ -24,8 +24,8 @@
         &-bg {
             position: absolute;
             top: 0;
-            left: 0;
-            transform: translate3d(0,-100%,0);
+            left: 50%;
+            transform: translate3d(-50%,-100%,0);
             max-width: 1165px;
         }
     }
