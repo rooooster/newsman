@@ -29,8 +29,13 @@ layout: compress
 
     <script src="{{ site.baseurl }}/assets/js/bundle.min.js"></script>
 
-    {% include Analytics/google-analytics.html %}
-    {% include Analytics/yandex-metrika.html %}
+    {% if google-analytics == 'production' %}
+        {% include Analytics/google-analytics.html %}
+    {% endif %}
+
+    {% if yandex-metrika == 'production' %}
+        {% include Analytics/yandex-metrika.html %}
+    {% endif %}
 
 </body>
 </html>

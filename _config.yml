@@ -1,4 +1,6 @@
 baseurl: '/newsman'
+google-analytics: 'production'
+yandex-metrika: 'production'
 include: ['_pages']
 exclude: ['README.md', 'node_modules', 'gulpfile.js', 'package.json']
 includes_dir: ./_components
