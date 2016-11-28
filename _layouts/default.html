@@ -29,11 +29,11 @@ layout: compress
 
     <script src="{{ site.baseurl }}/assets/js/bundle.min.js"></script>
 
-    {% if google-analytics == 'production' %}
+    {% if site.google-analytics == 'production' %}
         {% include Analytics/google-analytics.html %}
     {% endif %}
 
-    {% if yandex-metrika == 'production' %}
+    {% if site.yandex-metrika == 'production' %}
         {% include Analytics/yandex-metrika.html %}
     {% endif %}
 
