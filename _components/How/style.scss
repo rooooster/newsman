@@ -1,0 +1,227 @@
+.how {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 100px;
+    position: relative;
+
+    &__caption {
+        @include title;
+        @include title--dotted;
+        width: 100%;
+    }
+
+    p {
+        font-size: 33px;
+        // font-family: 'kupparegular', sans-serif;
+        // font-family: 'kuppa_basicregular', sans-serif;
+        font-family: 'EngineRegular', sans-serif;
+        position: relative;
+        text-transform: uppercase;
+        letter-spacing: -2px;
+
+        .is-blue {
+            color: #425da8;
+        }
+
+        .is-orange {
+            color: #ff6700;
+        }
+
+        .is-small {
+            font-size: 30px;
+            letter-spacing: -2.5px;
+        }
+    }
+
+    &__tip1 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        width: 100%;
+
+        &-head {
+            margin-top: -85px;
+            margin-right: 20px;
+        }
+
+        &-itsform {
+            margin-bottom: 40px;
+        }
+
+        &-arrow {
+            margin-left: -145px;
+            margin-bottom: -105px;
+            margin-right: 11%;
+        }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // flex-wrap: wrap;
+    }
+
+    &__tip2 {
+        text-align: right;
+        max-width: 280px;
+        padding-right: 16px;
+        box-sizing: border-box;
+        // position: absolute;
+        // top: 0;
+        // left: -40px;
+
+        &-head {
+            // display: block;
+            // margin: 0 auto 10px;
+        }
+
+        &-arrow {
+            // display: block;
+            // margin: 14px auto 6px;
+            // transform: translate3d(90px,0,0);
+        }
+    }
+
+    .form {
+    //     margin-bottom: 200px;
+    }
+
+    &__tip3 {
+        max-width: 280px;
+        padding-left: 16px;
+        box-sizing: border-box;
+        // position: absolute;
+        // top: 0;
+        // right: -40px;
+
+        &-head {
+            // display: block;
+            // margin: 0 auto 10px;
+        }
+
+        &-arrow {
+            // display: block;
+            // margin: 14px auto 6px;
+            // transform: translate3d(-90px,0,0);
+        }
+    }
+
+    &__pointer {
+        // width: 100%;
+        // position: relative;
+        // bottom: 0;
+        // left: 36.5%;
+        // transform: translate3d(0,30px,0);
+    }
+
+    &__tip4 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        // position: relative;
+        // bottom: 0;
+        // right: 25%;
+        // z-index: 110;
+
+        &-arrow {
+            // position: absolute;
+            // right: 100%;
+            // top: 0;
+            // padding-top: 18px;
+            // padding-right: 9px;
+        }
+
+        &-client {
+            // position: absolute;
+            // left: 100%;
+            // top: 50%;
+            // padding-left: 6px;
+            // transform: translate3d(0,-50%,0);
+        }
+    }
+
+    &-bgmails {
+        max-width: 1165px;
+    }
+
+    &__tip5 {
+        background-color: #fff;
+        text-align: center;
+        // margin: 0 auto 140px;
+        padding: 20px 10px 38px;
+        box-shadow: 1px 2px 0 #dbdcdd;
+        // position: relative;
+        // z-index: 90;
+        width: 100%;
+        box-sizing: border-box;
+
+        &-mail {
+            margin: 0 auto 10px;
+        }
+    }
+
+    &__tip6 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        width: 100%;
+
+        &-head {
+            // position: absolute;
+            // top: -20px;
+            // right: 100%;
+            // padding-right: 16px;
+        }
+
+        &-arrow {
+            // position: absolute;
+            // z-index: 100;
+            // top: 100%;
+            // left: 100%;
+            // transform: translate3d(18px,-18px,0);
+        }
+    }
+
+    &__tip7 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        text-align: center;
+
+        &-client {
+            margin-right: -11px;
+            margin-bottom: 0;
+            position: relative;
+            z-index: 90;
+        }
+
+        .code {
+            margin: 0 0 52px;
+            position: relative;
+            z-index: 80;
+        }
+
+        &-tablet {
+            margin-left: 24px;
+            margin-bottom: 96px;
+        }
+
+        &-nextday {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        &-newsman {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}

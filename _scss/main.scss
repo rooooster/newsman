@@ -4,7 +4,8 @@
 // Vendor
 @import 'vendor/svg-icons/svg-icons';
 @import 'vendor/lato-font/lato';
-@import 'vendor/kuppa-font/kuppa';
+// @import 'vendor/kuppa-font/kuppa';
+@import 'vendor/engine-font/engine';
 @import '../node_modules/coriolan-ui/coriolan-ui';
 
 // UI
@@ -16,7 +17,7 @@
 @import '_components/Header/style';
 @import '_components/Menu/style';
 @import '_components/Features/style';
-@import '_components/HowToJoin/style';
+@import '_components/How/style';
 @import '_components/Form/style';
 @import '_components/Code/style';
 @import '_components/Statistics/style';
