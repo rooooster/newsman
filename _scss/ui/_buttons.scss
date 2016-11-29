@@ -1,9 +1,10 @@
 @mixin btn {
+    font-family: 'LatoRegular', sans-serif;
     text-align: center;
     background: #425da8;
     color: #96b7ff;
     text-transform: uppercase;
-    font-weight: 700;
+    // font-weight: 700;
     border: 0 solid #2f468f;
     border-right-width: 3px;
     border-bottom-width: 3px;
