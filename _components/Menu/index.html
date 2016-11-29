@@ -1,5 +1,5 @@
-<nav class="menu">
+<nav class="menu js-menu">
     {% for i in site.data.Menu.config %}
-        <a href="#" class="menu__item">{{ i.name }}</a>
+        <a href="{{ site.baseurl }}/{{ i.href }}" class="menu__item {{ i.status }}">{{ i.name }}</a>
     {% endfor %}
 </nav>

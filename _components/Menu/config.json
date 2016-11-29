@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Features",
+        "href": "#features",
+        "status": "",
+    },
+    {
+        "name": "How To Join",
+        "href": "#howtojoin",
+        "status": "",
+    },
+    {
+        "name": "Figures And Clients",
+        "href": "#figuresandclients",
+        "status": "",
+    },
+    {
+        "name": "Prices",
+        "href": "#prices",
+        "status": "is-hidden",
+    },
+    {
+        "name": "More Info",
+        "href": "moreinfo",
+        "status": "is-external",
+    }
+]
