@@ -119,6 +119,7 @@
             h2 {
                 @include title;
                 @include title--dotted;
+                margin-bottom: 60px;
             }
 
             p {

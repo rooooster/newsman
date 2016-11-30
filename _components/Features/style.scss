@@ -10,7 +10,7 @@
             margin: 0 auto 20px;
         }
 
-        &-title {
+        &-caption {
             font-size: 36px;
             margin: 0 auto;
             max-width: 550px;
@@ -62,10 +62,11 @@
 
         &-bg {
             position: absolute;
-            top: 0;
+            top: 2px;
             left: 50%;
-            transform: translate3d(-50%,-100%,0);
+            width: 100%;
             max-width: 1165px;
+            transform: translate3d(-50%,-100%,0);
         }
 
         &-item {

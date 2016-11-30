@@ -40,6 +40,11 @@ img {
     background: #f2f2f2;
     box-sizing: border-box;
     overflow: hidden;
+    padding: 0 10px;
+
+    @include media(M) {
+        padding: 0;
+    }
 
     &__inner {
         width: 100%;

@@ -3,14 +3,11 @@
     margin-bottom: 50px;
     text-align: center;
 
-    &__title {
+    &__caption {
         @include title;
         @include title--dotted;
         text-align: left;
-
-        @include media(M) {
-            margin-bottom: 0;
-        }
+        margin-bottom: 40px;
     }
 
     &__header {

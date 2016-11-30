@@ -1,16 +1,26 @@
 @mixin btn {
+    outline: none;
     font-family: 'LatoRegular', sans-serif;
     text-align: center;
     background: #425da8;
     color: #96b7ff;
     text-transform: uppercase;
     border: 0 solid #2f468f;
-    border-right-width: 3px;
-    border-bottom-width: 3px;
-    font-size: 26px;
-    padding: 13px 34px;
-    border-radius: 6px;
-    outline: none;
+    //size
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    font-size: 20px;
+    padding: 11px 20px;
+    border-radius: 4px;
+
+    @include media(M) {
+        //size
+        border-right-width: 3px;
+        border-bottom-width: 3px;
+        font-size: 26px;
+        padding: 13px 34px;
+        border-radius: 6px;
+    }
 
     &:hover {
     }
@@ -20,9 +30,19 @@
 }
 
 @mixin btn--large {
-    border-right-width: 4px;
-    border-bottom-width: 4px;
-    font-size: 33px;
-    padding: 25px 44px;
-    border-radius: 10px;
+    //size
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    font-size: 24px;
+    padding: 13px 20px;
+    border-radius: 6px;
+
+    @include media(M) {
+        //size
+        border-right-width: 4px;
+        border-bottom-width: 4px;
+        font-size: 33px;
+        padding: 25px 44px;
+        border-radius: 10px;
+    }
 }

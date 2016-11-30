@@ -1,11 +1,11 @@
 @mixin title {
     color: #ff6700;
     font-size: 55px;
-    // font-size: 32px;
+    font-size: 34px;
 
-    // @include media(M) {
-    //     font-size: 55px;
-    // }
+    @include media(M) {
+        font-size: 55px;
+    }
 }
 
 @mixin title--dotted {

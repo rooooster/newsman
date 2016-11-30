@@ -1,9 +1,12 @@
 .how {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 0 auto 100px;
     position: relative;
+
+    @include media(M) {
+        align-items: center;
+    }
 
     &__caption {
         @include title;
@@ -60,7 +63,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        // flex-wrap: wrap;
     }
 
     &__tip2 {
@@ -70,6 +72,11 @@
         text-align: right;
         margin-bottom: 124px;
         margin-left: -60px;
+        display: none;
+
+        @include media(L) {
+            display: block;
+        }
 
         &-head {
             margin-right: 60%;
@@ -90,7 +97,8 @@
     .form {
         // margin-right: 18px;
         // margin-left: 18px;
-        min-width: 670px;
+        // min-width: 670px;
+        // margin-bottom: 50px;
     }
 
     &__tip3 {
@@ -99,6 +107,11 @@
         // box-sizing: border-box;
         margin-right: -60px;
         margin-bottom: 70px;
+        display: none;
+
+        @include media(L) {
+            display: block;
+        }
 
         &-head {
             margin-left: 8%;
@@ -118,7 +131,12 @@
     &__pointer {
         margin-top: -60px;
         margin-right: 250px;
-        margin-bottom: -10px;
+        margin-bottom: -20px;
+        display: none;
+
+        @include media(L) {
+            display: block;
+        }
     }
 
     &__tip4 {
@@ -126,8 +144,9 @@
         justify-content: flex-end;
         align-items: center;
         position: relative;
-        width: 100%;
-        margin-right: 35%;
+        margin-top: 20px;
+        margin-left: 32%;
+        z-index: 100;
 
         &-arrow {
             margin-right: 15px;
@@ -144,8 +163,15 @@
         }
     }
 
-    &-bgmails {
-        max-width: 1165px;
+    &__bgmails {
+        // width: 100%;
+        // max-width: 1165px;
+            position: relative;
+            top: 2px;
+            left: 50%;
+            width: 100%;
+            max-width: 1165px;
+            transform: translate3d(-50%,0,0);
     }
 
     &__tip5 {
@@ -190,8 +216,8 @@
     &__tip7 {
         display: flex;
         align-items: flex-end;
+        align-items: center;
         justify-content: center;
-        // flex-wrap: wrap;
         margin-bottom: 50px;
         text-align: center;
 
@@ -200,18 +226,27 @@
             margin-bottom: 0;
             position: relative;
             z-index: 90;
+            display: none;
+
+            @include media(L) {
+                display: block;
+            }
         }
 
         .code {
             margin: 0 0 52px;
             position: relative;
             z-index: 80;
-            min-width: 624px;
         }
 
         &-tablet {
             margin-left: 24px;
             margin-bottom: 96px;
+            display: none;
+
+            @include media(L) {
+                display: block;
+            }
         }
     }
 

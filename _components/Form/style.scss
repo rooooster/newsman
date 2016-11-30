@@ -1,13 +1,16 @@
 .form {
     font-family: 'LatoRegular', sans-serif;
     background: #96b7ff;
-    padding: 80px 42px 40px;
+    padding: 60px 20px 30px;
     border-radius: 10px;
     width: 100%;
-    max-width: 660px;
     margin: 0 auto;
     box-sizing: border-box;
     box-shadow: 2px 3px 1px #b4b6b8;
+
+    @include media(M) {
+        padding: 80px 42px 40px;
+    }
 
     &__row {
         margin-bottom: 24px;
@@ -21,10 +24,14 @@
     label {
         cursor: pointer;
         color: #fff;
-        font-size: 33px;
+        font-size: 26px;
         text-align: left;
         display: block;
         margin-bottom: 6px;
+
+        @include media(M) {
+            font-size: 33px;
+        }
     }
 
     input[type=name],
