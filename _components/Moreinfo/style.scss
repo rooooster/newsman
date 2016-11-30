@@ -23,9 +23,10 @@
 
         &-bg {
             position: absolute;
-            top: 0;
+            top: 2px;
             left: 50%;
             transform: translate3d(-50%,-100%,0);
+            width: 100%;
             max-width: 1165px;
         }
     }
@@ -52,14 +53,22 @@
         }
     }
 
-    &__img {
-        width: 50%;
+    figure {
+        max-width: 50%;
         padding-bottom: 20px;
+        text-align: center;
 
         @include media(M) {
+            max-width: inherit;
             width: calc(30% - 80px);
             display: block;
-            padding: 0 40px;
+            // padding: 0 40px;
+            // box-sizing: border-box;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
         }
     }
 

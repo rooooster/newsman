@@ -16,11 +16,15 @@
     }
 
     p {
-        font-size: 33px;
+        font-size: 21px;
         font-family: 'EngineRegular', sans-serif;
         position: relative;
         text-transform: uppercase;
         letter-spacing: -1.8px;
+
+        @include media(S) {
+            font-size: 33px;
+        }
 
         .is-blue {
             color: #425da8;
@@ -31,8 +35,12 @@
         }
 
         .is-small {
-            font-size: 30px;
+            font-size: 17px;
             letter-spacing: -2.1px;
+
+            @include media(S) {
+                font-size: 30px;
+            }
         }
     }
 
