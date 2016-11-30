@@ -1,6 +1,11 @@
 <div class="header">
-    <a href="{{ site.baseurl }}/" class="header__logo">
-        <img src="{{ site.baseurl }}/assets/img/logo/logo-header.png">
-    </a>
+
+    {% include Header/_logo.html %}
+
     {% include Menu/index.html %}
+
+    <a class="header__mobmenu js-mobmenu-open" href="javascript:void(0)">
+        <span class="header__mobmenu-icon"></span>
+    </a>
+
 </div>

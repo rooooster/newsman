@@ -1,5 +1,7 @@
 .features {
-    margin: 20px auto 50px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    @include anhor;
 
     &__header {
         text-align: center;

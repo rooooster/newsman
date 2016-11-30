@@ -1,16 +1,9 @@
 .social {
+    text-align: center;
 
     &__item {
         font-size: 35px;
         color: #a7afb5;
-        margin: 0 10px;
-
-        @include media(M) {
-            margin: 0 10px;
-        }
-
-        @include media(L) {
-            margin: 0 20px;
-        }
+        padding: 0 10px;
     }
 }

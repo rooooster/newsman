@@ -6,11 +6,13 @@
     justify-content: flex-end;
     align-items: center;
     box-shadow: 1px 1px 0px #d9dbdc;
+    margin: 0 -10px;
 
     @include media(M) {
         align-items: flex-end;
         padding: 25px;
         padding-right: 15px;
+        margin: 0;
     }
 
     @include media(L) {

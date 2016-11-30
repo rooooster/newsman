@@ -1,8 +1,10 @@
 .how {
+    padding-top: 20px;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: column;
-    margin: 0 auto 100px;
     position: relative;
+    @include anhor;
 
     @include media(M) {
         align-items: center;

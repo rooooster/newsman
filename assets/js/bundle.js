@@ -10571,6 +10571,15 @@ if (typeof Object.create !== 'function') {
     
 })(jQuery, window, document);
 
+$(document).ready(function () {
+
+    $('.js-mobmenu-open, .js-mobmenu-close, .js-mobmenu-overlay, .mobmenu .js-home-menu .is-interior').on('click', function(event) {
+        $('.js-mobmenu, .js-mobmenu-overlay, body').toggleClass('is-open');
+        event.preventDefault();
+    });
+
+});
+
 ;$(document).ready(function () {
     $('.js-home-menu').singlePageNav({
         // offset: $('.js-home-menu').outerHeight(),

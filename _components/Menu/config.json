@@ -2,17 +2,17 @@
     {
         "name": "Features",
         "href": "#features",
-        "status": "",
+        "status": "is-interior",
     },
     {
         "name": "How To Join",
         "href": "#howtojoin",
-        "status": "",
+        "status": "is-interior",
     },
     {
         "name": "Figures And Clients",
         "href": "#figuresandclients",
-        "status": "",
+        "status": "is-interior",
     },
     {
         "name": "Prices",

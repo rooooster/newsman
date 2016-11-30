@@ -6,7 +6,11 @@
         text-align: center;
         position: relative;
         z-index: 100;
-        margin-bottom: 130px;
+        margin-bottom: 70px;
+
+        @include media(M) {
+            margin-bottom: 130px;
+        }
     }
 
     &__content {

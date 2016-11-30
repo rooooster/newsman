@@ -1,13 +1,27 @@
 .header {
+    position: relative;
     background: #fff;
-    padding: 25px 15px;
     box-shadow: 1px 2px 0 #dbdcdd;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin: 0 -10px;
+    max-width: 1164px;
+
+    padding: 25px 15px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 999;
+    top: 0;
+    // left: 0;
 
     @include media(M) {
         padding: 45px 15px 45px 25px;
+        margin: 0;
+    }
+
+    @include media(L) {
     }
 
     @include media(XL) {
@@ -15,7 +29,7 @@
     }
 
     &__logo {
-        width: 120px;
+        width: 118px;
 
         @include media(L) {
             width: auto;
@@ -27,6 +41,30 @@
 
         @include media(M) {
             display: inline-block;
+        }
+    }
+
+    &__mobmenu {
+        color: #50545a;
+        outline: none;
+        display: block;
+        font-size: 40px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 20px;
+        width: 80px;
+        height: 80px;
+        box-sizing: border-box;
+
+        @include media(M) {
+            display: none;
+        }
+
+        &-icon {
+            @extend .icon;
+            @extend .icon-menu;
+            display: block;
         }
     }
 }

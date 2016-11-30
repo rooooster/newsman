@@ -1,7 +1,9 @@
 .statistics {
     font-size: 22px;
+    padding-top: 20px;
     margin-bottom: 50px;
     text-align: center;
+    @include anhor;
 
     &__caption {
         @include title;
@@ -149,6 +151,13 @@
                         max-width: 200px;
                         padding: 40px 0 86px;
                         margin: 0 auto;
+                    }
+                }
+
+                &:nth-child(2) {
+
+                    img {
+                        margin-top: 32px;
                     }
                 }
             }

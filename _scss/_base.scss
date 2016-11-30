@@ -3,6 +3,8 @@ html {
 }
 
 body {
+    min-width: 320px;
+    width: 100%;
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -10,6 +12,10 @@ body {
     @include media(M) {
         transform: scale(.75);
         transform-origin: 50% 0;
+    }
+
+    &.is-open {
+        overflow: hidden;
     }
 }
 
@@ -50,5 +56,20 @@ img {
         width: 100%;
         max-width: 1164px;
         margin: 0 auto;
+        position: relative;
+
+        padding-top: 80px;
+
+        @include media(M) {
+            padding-top: 120px;
+        }
+
+        @include media(L) {
+            padding-top: 140px;
+        }
+
+        @include media(XL) {
+            padding-top: 180px;
+        }
     }
 }
