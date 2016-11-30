@@ -1,4 +1,4 @@
-<nav class="menu js-menu">
+<nav class="menu {% if page.layout == 'home' %}js-home-menu{% endif %}">
     {% for i in site.data.Menu.config %}
         <a href="{{ site.baseurl }}/{{ i.href }}" class="menu__item {{ i.status }}">{{ i.name }}</a>
     {% endfor %}
