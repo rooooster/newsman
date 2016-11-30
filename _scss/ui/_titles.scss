@@ -1,24 +1,24 @@
 @mixin title {
     color: #ff6700;
-    font-size: 32px;
+    font-size: 55px;
+    // font-size: 32px;
 
-    @include media(M) {
-        font-size: 55px;
-    }
+    // @include media(M) {
+    //     font-size: 55px;
+    // }
 }
 
 @mixin title--dotted {
     position: relative;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
 
-    @include media(M) {
-        margin-bottom: 60px;
-    }
+    // @include media(M) {
+    //     margin-bottom: 60px;
+    // }
 
     &:after {
         content: '';
         position: absolute;
-        // left: 102%;
         bottom: 6px;
         width: 113px;
         height: 4px;
