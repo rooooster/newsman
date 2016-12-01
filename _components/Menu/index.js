@@ -1,4 +1,4 @@
-;$(document).ready(function () {
+$(document).ready(function () {
     $('.js-home-menu').singlePageNav({
         // offset: $('.js-home-menu').outerHeight(),
         filter: ':not(.is-external)',

@@ -41,35 +41,45 @@ img {
 .main-container {
     width: 100%;
     max-width: 1306px;
-    flex: 1 0 auto;
+    // flex: 1 0 auto;
     align-self: center;
     background: #f2f2f2;
-    box-sizing: border-box;
     overflow: hidden;
+
+    box-sizing: border-box;
     padding: 0 10px;
 
     @include media(M) {
-        padding: 0;
+        padding: 0 2%;
+    }
+
+    @include media(L) {
+        // padding: 0 4%;
+    }
+
+    @include media(XL) {
+        padding: 0 71px;
     }
 
     &__inner {
         width: 100%;
-        max-width: 1164px;
+        // max-width: 1164px;
         margin: 0 auto;
         position: relative;
 
         padding-top: 80px;
 
         @include media(M) {
-            padding-top: 120px;
+            // padding-top: 120px;
+            padding-top: 0;
         }
 
         @include media(L) {
-            padding-top: 140px;
+            // padding-top: 140px;
         }
 
         @include media(XL) {
-            padding-top: 180px;
+            // padding-top: 180px;
         }
     }
 }

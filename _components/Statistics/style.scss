@@ -4,6 +4,7 @@
     margin-bottom: 50px;
     text-align: center;
     @include anhor;
+    @include unvisible;
 
     &__caption {
         @include title;

@@ -5,5 +5,10 @@
         font-size: 35px;
         color: #a7afb5;
         padding: 0 10px;
+        transition: color .2s ease;
+
+        &:hover {
+            color: #ff6700;
+        }
     }
 }

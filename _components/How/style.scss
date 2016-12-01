@@ -5,6 +5,7 @@
     flex-direction: column;
     position: relative;
     @include anhor;
+    @include unvisible;
 
     @include media(M) {
         align-items: center;

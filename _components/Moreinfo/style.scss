@@ -1,5 +1,6 @@
 .moreinfo {
     padding: 50px 0 0;
+    @include unvisible;
 
     &__caption {
         @include title;

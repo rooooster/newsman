@@ -3,25 +3,27 @@
 
     &__item {
         font-size: 18px;
-        color: #a7a9ac;
         text-decoration: none;
         line-height: 1;
         padding: 10px;
         display: block;
         text-align: center;
+        color: #a7a9ac;
+        transition: color .2s ease;
 
         @include media(M) {
             display: inline-block;
-            padding: 0 10px;
+            padding: 4px 10px;
         }
 
         @include media(L) {
-            display: inline-block;
-            padding: 0 20px;
+            padding: 6px 20px;
             font-size: 22px;
         }
 
+        &:hover,
         &.is-selected {
+            color: #ff6700;
         }
 
         &.is-hidden {

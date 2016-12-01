@@ -2,6 +2,7 @@
     padding-top: 20px;
     margin-bottom: 30px;
     @include anhor;
+    @include unvisible;
 
     &__header {
         text-align: center;
