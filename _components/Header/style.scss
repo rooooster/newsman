@@ -1,46 +1,46 @@
 .header {
-        position: fixed;
-        z-index: 999;
-        top: 0;
-        // left: 0;
-        width: 100%;
-        margin: 0 -10px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    margin: 0 rem(-10);
 
-        @include media(M) {
-            position: relative;
-            margin: 0;
-        }
+    @include media(M) {
+        position: relative;
+        margin: 0;
+    }
 
     &__wrap {
         position: relative;
         background: #fff;
-        box-shadow: 1px 2px 0 #dbdcdd;
+        box-shadow: rem(1) rem(2) 0 #dbdcdd;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1164px;
-
+        height: rem(80);
         width: 100%;
-        padding: 25px 15px;
+        padding: 0 rem(15);
         box-sizing: border-box;
 
         @include media(M) {
-            padding: 45px 15px 45px 25px;
+            height: 13rem;
         }
 
         @include media(L) {
         }
 
         @include media(XL) {
-            padding: 65px 25px 65px 45px;
+            padding: 0 rem(25);
         }
     }
 
     &__logo {
-        width: 118px;
+        width: 12rem;
+        padding: 0 1rem;
+        box-sizing: border-box;
 
-        @include media(L) {
-            width: auto;
+        @include media(M) {
+            width: 16rem;
         }
     }
 
@@ -56,13 +56,13 @@
         color: #50545a;
         outline: none;
         display: block;
-        font-size: 40px;
+        font-size: rem(40);
         position: absolute;
         right: 0;
         top: 0;
-        padding: 20px;
-        width: 80px;
-        height: 80px;
+        padding: rem(20);
+        width: rem(80);
+        height: rem(80);
         box-sizing: border-box;
 
         @include media(M) {

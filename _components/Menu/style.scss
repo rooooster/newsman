@@ -2,10 +2,10 @@
     font-family: Arial, sans-serif;
 
     &__item {
-        font-size: 18px;
+        font-size: rem(18);
         text-decoration: none;
         line-height: 1;
-        padding: 10px;
+        padding: rem(10);
         display: block;
         text-align: center;
         color: #a7a9ac;
@@ -13,12 +13,13 @@
 
         @include media(M) {
             display: inline-block;
-            padding: 4px 10px;
+            padding: rem(4) rem(10);
+            font-size: rem(22);
         }
 
         @include media(L) {
-            padding: 6px 20px;
-            font-size: 22px;
+            padding: rem(6) rem(20);
+            font-size: rem(22);
         }
 
         &:hover,

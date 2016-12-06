@@ -1,5 +1,5 @@
 .moreinfo {
-    padding: 50px 0 0;
+    padding: rem(50) 0 0;
     @include unvisible;
 
     &__caption {
@@ -7,32 +7,32 @@
         text-align: center;
         position: relative;
         z-index: 100;
-        margin-bottom: 70px;
+        margin-bottom: rem(70);
 
         @include media(M) {
-            margin-bottom: 130px;
+            margin-bottom: rem(130);
         }
     }
 
     &__content {
         background-color: #fff;
-        padding: 0 20px 80px;
-        box-shadow: 1px 2px 0px #d9dbdc;
+        padding: 0 rem(20) rem(80);
+        box-shadow: rem(1) rem(2) 0 #d9dbdc;
         position: relative;
         z-index: 90;
 
         @include media(M) {
-            padding: 0 80px 80px;
-            margin-bottom: 60px;
+            padding: 0 rem(80) rem(80);
+            margin-bottom: rem(60);
         }
 
         &-bg {
             position: absolute;
-            top: 2px;
+            top: rem(2);
             left: 50%;
             transform: translate3d(-50%,-100%,0);
             width: 100%;
-            max-width: 1165px;
+            max-width: rem(1165);
         }
     }
 
@@ -41,16 +41,16 @@
         flex-direction: column;
         align-items: center;
         box-sizing: border-box;
-        padding-top: 20px;
+        padding-top: rem(20);
 
         @include media(M) {
             flex-direction: row;
-            padding-top: 40px;
+            padding-top: rem(40);
         }
 
         p {
-            font-size: 24px;
-            margin: 0 0 20px;
+            font-size: rem(24);
+            margin: 0 0 rem(20);
         }
 
         span {
@@ -60,7 +60,7 @@
 
     figure {
         max-width: 50%;
-        padding-bottom: 20px;
+        padding-bottom: rem(20);
         text-align: center;
 
         @include media(M) {
@@ -93,52 +93,48 @@
         justify-content: space-between;
 
         @include media(M) {
-            margin-top: 50px;
+            margin-top: rem(50);
             flex-direction: row;
             align-items: flex-start;
         }
 
-        &--justify {
-            justify-content: space-around;
-        }
-
-
         &-img {
             width: 100%;
-            margin-top: 10px;
+            margin-top: rem(10);
 
             @include media(M) {
                 width: 50%;
-                padding: 0 10px 0 0;
+                padding: 0 rem(5);
+                box-sizing: border-box;
             }
 
-            @include media(XL) {
-                width: auto;
-            }
+            // @include media(XL) {
+            //     width: auto;
+            // }
         }
     }
 
     &__list {
-        margin-bottom: 60px;
+        margin-bottom: rem(60);
 
         &-item {
             display: flex;
             flex-wrap: wrap;
-            margin-top: 25px;
+            margin-top: rem(25);
 
             @include media(M) {
-                margin-top: 55px;
+                margin-top: rem(55);
             }
 
             h2 {
                 @include title;
                 @include title--dotted;
-                margin-bottom: 60px;
+                margin-bottom: rem(60);
             }
 
             p {
-                margin: 0 0 20px;
-                font-size: 19px;
+                margin: 0 0 rem(20);
+                font-size: rem(19);
             }
         }
 

@@ -1,12 +1,12 @@
 .code {
     font-family: 'LatoRegular', sans-serif;
-    font-size: 20px;
-    box-shadow: 1px 2px 0px #d9dbdc;
+    font-size: rem(20);
+    box-shadow: rem(1) rem(2) 0 #d9dbdc;
     color: #425da8;
     background: #fff;
-    max-width: 624px;
+    max-width: rem(624);
     margin: 0 auto;
-    padding: 26px 28px;
+    padding: rem(26) rem(28);
     box-sizing: border-box;
     overflow-x: scroll;
     text-align: left;

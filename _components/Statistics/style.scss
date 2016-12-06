@@ -1,7 +1,7 @@
 .statistics {
-    font-size: 22px;
-    padding-top: 20px;
-    margin-bottom: 50px;
+    font-size: rem(22);
+    padding-top: rem(20);
+    margin-bottom: rem(50);
     text-align: center;
     @include anhor;
     @include unvisible;
@@ -10,11 +10,11 @@
         @include title;
         @include title--dotted;
         text-align: left;
-        margin-bottom: 40px;
+        margin-bottom: rem(40);
     }
 
     &__header {
-        margin-bottom: 60px;
+        margin-bottom: rem(60);
         display: flex;
         flex-wrap: wrap;
         align-items: flex-end;
@@ -27,7 +27,8 @@
             }
 
             img {
-                margin-bottom: 60px;
+                max-width: 12rem;
+                margin-bottom: rem(60);
             }
         }
 
@@ -45,7 +46,7 @@
             }
 
             li {
-                margin-bottom: 60px;
+                margin-bottom: rem(60);
                 width: 100%;
                 @include clearfix;
 
@@ -55,15 +56,15 @@
                 }
 
                 p {
-                    margin-bottom: 30px;
+                    margin-bottom: rem(30);
 
                     @include media(M) {
                         float: right;
-                        margin-right: 90px;
+                        margin-right: rem(90);
                     }
 
                     large {
-                        font-size: 48px;
+                        font-size: rem(48);
                         display: block;
                         white-space: nowrap;
 
@@ -74,6 +75,7 @@
                 }
 
                 img {
+                    max-width: 12rem;
 
                     @include media(M) {
                         float: right;
@@ -85,8 +87,8 @@
 
     &__customers {
         // background: url(../img/content/statistics-customers.png) center top no-repeat;
-        padding-top: 148px;
-        margin-bottom: 96px;
+        padding-top: rem(148);
+        margin-bottom: rem(96);
         position: relative;
 
         img {
@@ -100,7 +102,7 @@
         h4 {
             large {
                 color: #ff6700;
-                font-size: 48px;
+                font-size: rem(48);
             }
         }
     }
@@ -115,7 +117,7 @@
             flex-wrap: wrap;
 
             li {
-                margin-bottom: 60px;
+                margin-bottom: rem(60);
                 width: 100%;
 
                 @include media(M) {
@@ -123,7 +125,7 @@
                 }
 
                 img {
-                    margin-bottom: 10px;
+                    margin-bottom: rem(10);
                 }
 
                 p {
@@ -131,7 +133,7 @@
                     large {
                         display: block;
                         color: #ff6700;
-                        font-size: 55px;
+                        font-size: rem(55);
                     }
                 }
 
@@ -145,12 +147,13 @@
                         width: auto;
                         transform: translate3d(-50%,0,0);
                         margin: 0;
+                        max-width: 20rem;
                     }
 
                     p {
                         position: relative;
-                        max-width: 200px;
-                        padding: 40px 0 86px;
+                        max-width: rem(200);
+                        padding: rem(40) 0 rem(86);
                         margin: 0 auto;
                     }
                 }
@@ -158,7 +161,16 @@
                 &:nth-child(2) {
 
                     img {
-                        margin-top: 32px;
+                        max-width: 15rem;
+                        margin-top: rem(32);
+                    }
+                }
+
+                &:nth-child(3) {
+
+                    img {
+                        max-width: 16rem;
+                        margin-top: rem(32);
                     }
                 }
             }
@@ -166,7 +178,7 @@
 
         small {
             color: #050000;
-            font-size: 18px;
+            font-size: rem(18);
         }
     }
 }

@@ -1,11 +1,12 @@
 // Variables
-@import '-vars';
+@import '-variables';
 
 // Vendor
-@import 'vendor/svg-icons/svg-icons';
 @import 'vendor/lato-font/lato';
 @import 'vendor/engine-font/engine';
-@import '../node_modules/coriolan-ui/coriolan-ui';
+@import 'vendor/svg-icons/svg-icons';
+@import '../bower_components/coriolan-ui/coriolan-ui';
+@import '../bower_components/normalize-css/normalize';
 
 // UI
 @import 'ui/buttons';
@@ -29,4 +30,4 @@
 @import '_components/Statistics/style';
 
 // More Info Page
-@import '_components/Moreinfo/style';
+@import '_components/MoreInfo/style';
