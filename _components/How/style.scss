@@ -1,6 +1,6 @@
 .how {
-    padding-top: 20px;
-    margin-bottom: 80px;
+    padding-top: rem(20);
+    margin-bottom: rem(50);
     display: flex;
     flex-direction: column;
     position: relative;
@@ -15,18 +15,18 @@
         @include title;
         @include title--dotted;
         width: 100%;
-        margin-bottom: 60px;
+        margin-bottom: rem(60);
     }
 
     p {
-        font-size: 21px;
+        font-size: rem(21);
         font-family: 'EngineRegular', sans-serif;
         position: relative;
         text-transform: uppercase;
         letter-spacing: -1.8px;
 
         @include media(S) {
-            font-size: 33px;
+            font-size: rem(33);
         }
 
         .is-blue {
@@ -38,11 +38,11 @@
         }
 
         .is-small {
-            font-size: 17px;
+            font-size: rem(17);
             letter-spacing: -2.1px;
 
             @include media(S) {
-                font-size: 30px;
+                font-size: rem(30);
             }
         }
     }
@@ -55,17 +55,19 @@
         width: 100%;
 
         &-head {
-            margin-top: -85px;
-            margin-right: 20px;
+            max-width: 4rem;
+            margin-top: rem(-85);
+            margin-right: rem(20);
         }
 
         p {
-            margin-bottom: 40px;
+            margin-bottom: rem(40);
         }
 
         &-arrow {
-            margin-left: -145px;
-            margin-bottom: -105px;
+            max-width: 12rem;
+            margin-left: rem(-145);
+            margin-bottom: rem(-105);
             margin-right: 11%;
         }
     }
@@ -77,12 +79,10 @@
     }
 
     &__tip2 {
-        padding-right: 16px;
-        // max-width: 280px;
-        // box-sizing: border-box;
+        padding-right: rem(16);
         text-align: right;
-        margin-bottom: 124px;
-        margin-left: -60px;
+        margin-bottom: rem(124);
+        margin-left: rem(-60);
         display: none;
 
         @include media(L) {
@@ -90,8 +90,9 @@
         }
 
         &-head {
+            max-width: 4rem;
             margin-right: 60%;
-            margin-bottom: 8px;
+            margin-bottom: rem(8);
         }
 
         p {
@@ -99,25 +100,22 @@
         }
 
         &-arrow {
-            margin-top: 10px;
-            margin-bottom: 6px;
-            transform: translate3d(90px,0,0);
+            margin-top: rem(10);
+            margin-bottom: rem(6);
+            transform: translate3d(rem(90),0,0);
         }
     }
 
     .form {
-        // margin-right: 18px;
-        // margin-left: 18px;
-        // min-width: 670px;
-        // margin-bottom: 50px;
+        width: rem(700);
     }
 
     &__tip3 {
-        padding-left: 16px;
-        // max-width: 280px;
+        padding-left: rem(16);
+        // max-width: rem(280);
         // box-sizing: border-box;
-        margin-right: -60px;
-        margin-bottom: 70px;
+        margin-right: rem(-60);
+        margin-bottom: rem(70);
         display: none;
 
         @include media(L) {
@@ -125,8 +123,9 @@
         }
 
         &-head {
+            max-width: 4rem;
             margin-left: 8%;
-            margin-bottom: 8px;
+            margin-bottom: rem(8);
         }
 
         p {
@@ -134,15 +133,16 @@
         }
 
         &-arrow {
-            margin-top: 4px;
-            transform: translate3d(-90px,0,0);
+            margin-top: rem(4);
+            transform: translate3d(rem(-90),0,0);
         }
     }
 
     &__pointer {
-        margin-top: -60px;
-        margin-right: 250px;
-        margin-bottom: -20px;
+        max-width: 5rem;
+        margin-top: rem(-60);
+        margin-right: rem(250);
+        margin-bottom: rem(-30);
         display: none;
 
         @include media(L) {
@@ -155,13 +155,14 @@
         justify-content: flex-end;
         align-items: center;
         position: relative;
-        margin-top: 20px;
-        margin-left: 32%;
+        margin-top: rem(20);
+        margin-left: 31%;
         z-index: 100;
 
         &-arrow {
-            margin-right: 15px;
-            margin-bottom: -120px;
+            max-width: 10rem;
+            margin-right: rem(15);
+            margin-bottom: rem(-120);
         }
 
         p {
@@ -169,8 +170,9 @@
         }
 
         &-client {
-            margin-top: -100px;
-            margin-bottom: -100px;
+            max-width: 10rem;
+            margin-top: rem(-100);
+            margin-bottom: rem(-100);
         }
     }
 
@@ -178,25 +180,26 @@
         // width: 100%;
         // max-width: 1165px;
             position: relative;
-            top: 2px;
+            top: rem(2);
             left: 50%;
             width: 100%;
-            max-width: 1165px;
+            max-width: rem(1165);
             transform: translate3d(-50%,0,0);
     }
 
     &__tip5 {
         background-color: #fff;
         text-align: center;
-        padding: 0 10px 38px;
-        box-shadow: 1px 2px 0 #dbdcdd;
+        padding: 0 rem(10) rem(38);
+        box-shadow: rem(1) rem(2) 0 #dbdcdd;
         width: 100%;
         box-sizing: border-box;
-        margin-bottom: 50px;
+        margin-bottom: rem(50);
 
         &-mail {
-            margin-top: 15px;
-            margin-bottom: 15px;
+            max-width: 13rem;
+            margin-top: rem(15);
+            margin-bottom: rem(15);
         }
     }
 
@@ -210,8 +213,9 @@
         margin-left: 8%;
 
         &-head {
-            margin-top: -20px;
-            margin-right: 20px;
+            max-width: 4rem;
+            margin-top: rem(-20);
+            margin-right: rem(20);
         }
 
         p {
@@ -219,8 +223,9 @@
         }
 
         &-arrow {
-            margin-bottom: -113px;
-            margin-left: 10px;
+            max-width: 7rem;
+            margin-bottom: rem(-113);
+            margin-left: rem(10);
         }
     }
 
@@ -229,15 +234,16 @@
         align-items: flex-end;
         align-items: center;
         justify-content: center;
-        margin-bottom: 50px;
+        margin-bottom: rem(50);
         text-align: center;
 
         &-client {
-            margin-right: -11px;
+            margin-right: rem(-11);
             margin-bottom: 0;
             position: relative;
             z-index: 90;
             display: none;
+            max-width: 12rem;
 
             @include media(L) {
                 display: block;
@@ -245,14 +251,15 @@
         }
 
         .code {
-            margin: 0 0 52px;
+            margin: 0 0 rem(52);
             position: relative;
             z-index: 80;
         }
 
         &-tablet {
-            margin-left: 24px;
-            margin-bottom: 96px;
+            max-width: 22rem;
+            margin-left: rem(24);
+            margin-bottom: rem(96);
             display: none;
 
             @include media(L) {
@@ -264,10 +271,11 @@
     &__nextday {
         width: 100%;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: rem(20);
     }
 
     &__newsman {
+        width: 76rem;
         display: block;
         margin: 0 auto;
     }

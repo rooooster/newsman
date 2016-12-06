@@ -4,9 +4,6 @@
     "type": "git",
     "url": "https://github.com/rooooster/newsman"
   },
-  "dependencies": {
-    "coriolan-ui": "^0.1.14"
-  },
   "devDependencies": {
     "browser-sync": "^2.14.0",
     "gulp": "^3.9.1",

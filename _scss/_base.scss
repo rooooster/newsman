@@ -1,18 +1,20 @@
 html {
-    height: 100vh;
+    font-size: 14px;
+
+    @include media(M) {
+        // transform: scale(.75);
+        // transform-origin: 50% 0;
+        font-size: (14px*.75);
+    }
 }
 
 body {
-    min-width: 320px;
+    background-size: 45rem;
+    min-width: $XS;
     width: 100%;
     min-height: 100%;
     display: flex;
     flex-direction: column;
-
-    @include media(M) {
-        transform: scale(.75);
-        transform-origin: 50% 0;
-    }
 
     &.is-open {
         overflow: hidden;
@@ -40,46 +42,44 @@ img {
 
 .main-container {
     width: 100%;
-    max-width: 1306px;
-    // flex: 1 0 auto;
+    max-width: rem(1306);
     align-self: center;
     background: #f2f2f2;
     overflow: hidden;
 
     box-sizing: border-box;
-    padding: 0 10px;
+    padding: 0 rem(10);
 
     @include media(M) {
         padding: 0 2%;
     }
 
     @include media(L) {
-        // padding: 0 4%;
+        padding: 0 4%;
     }
 
     @include media(XL) {
-        padding: 0 71px;
+        padding: 0 rem(71);
     }
 
     &__inner {
         width: 100%;
-        // max-width: 1164px;
         margin: 0 auto;
         position: relative;
 
-        padding-top: 80px;
+        padding-top: rem(80);
 
         @include media(M) {
-            // padding-top: 120px;
+            // padding-top: rem(120);
             padding-top: 0;
         }
 
         @include media(L) {
-            // padding-top: 140px;
+            // padding-top: rem(140);
         }
 
         @include media(XL) {
-            // padding-top: 180px;
+            // padding-top: rem(180);
         }
     }
 }

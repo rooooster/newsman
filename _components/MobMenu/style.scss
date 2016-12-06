@@ -9,8 +9,8 @@
         background: #fff;
         position: fixed;
         top: 0;
-        right: -320px;
-        width: 320px;
+        right: -$XS;
+        width: $XS;
         height: 100%;
         z-index: 2000;
         overflow: hidden;
@@ -25,21 +25,23 @@
 
     &__container {
         overflow: auto;
-        width: 338px;
+        width: rem(338);
         height: 100%;
     }
 
     &__header {
-        height: 80px;
-        box-shadow: 1px 2px 0 #dbdcdd;
-        padding: 25px 35px;
+        height: rem(80);
+        box-shadow: rem(1) rem(2) 0 #dbdcdd;
+        padding: 0 rem(15);
         box-sizing: border-box;
-        margin-bottom: 40px;
-        width: 320px;
+        margin-bottom: rem(40);
+        width: $XS;
         position: relative;
+        display: flex;
+        align-items: center;
 
         .header__logo {
-            width: 118px;
+            width: 12rem;
             display: block;
             // margin: 0 auto;
         }
@@ -47,14 +49,14 @@
 
     &__close {
         display: block;
-        padding: 20px;
-        font-size: 40px;
+        padding: rem(20);
+        font-size: rem(40);
         color: #50545a;
         position: absolute;
         top: 0;
         right: 0;
-        width: 80px;
-        height: 80px;
+        width: rem(80);
+        height: rem(80);
         box-sizing: border-box;
 
         &-icon {
@@ -65,18 +67,18 @@
     }
 
     .menu {
-        width: 320px;
-        margin-bottom: 40px;
+        width: $XS;
+        margin-bottom: rem(40);
 
         .menu__item {
-            font-size: 22px;
-            padding: 16px 10px;
+            font-size: rem(22);
+            padding: rem(16) rem(10);
         }
     }
 
     .social {
-        width: 320px;
-        margin-bottom: 40px;
+        width: $XS;
+        margin-bottom: rem(40);
     }
 
     &__overlay {

@@ -2,9 +2,9 @@
     text-align: center;
 
     &__item {
-        font-size: 35px;
+        font-size: rem(35);
         color: #a7afb5;
-        padding: 0 10px;
+        padding: 0 rem(10);
         transition: color .2s ease;
 
         &:hover {

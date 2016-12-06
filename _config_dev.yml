@@ -2,6 +2,6 @@ baseurl: ''
 google-analytics: ''
 yandex-metrika: ''
 include: ['_pages']
-exclude: ['README.md', 'node_modules', 'gulpfile.js', 'package.json']
+exclude: ['README.md', 'node_modules', 'package.json', 'bower_components', 'bower.json', 'gulpfile.js']
 includes_dir: ./_components
 data_dir: ./_components

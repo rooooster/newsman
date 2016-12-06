@@ -57,10 +57,9 @@ gulp.task('sass', function () {
 // gulp js-concat
 gulp.task('js-concat', ['sass'], function () {
     return gulp.src([
-            '_js/lib/*',
-            '_js/vendor/*',
-            '_components/**/*.js',
-            '_js/*.js'
+            '_js/lib/**/*.js',
+            '_js/vendor/**/*.js',
+            '_js/common/**/*.js'
         ])
         .pipe(concat('bundle.js'))
         .pipe(gulp.dest('assets/js/'));
@@ -105,9 +104,8 @@ gulp.task('watch', ['browser-sync'], function () {
         '_components/**/*.scss'
     ], ['sass']);
     gulp.watch([
-        '_layouts/**/*',
+        '_layouts/**/*.html',
         '_components/**/*.html',
-        '_components/**/*.js',
         '_components/**/*.yml',
         '_components/**/*.json',
         '_js/**/*',

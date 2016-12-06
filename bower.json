@@ -1,0 +1,21 @@
+{
+  "name": "newsman",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Ihor Orlovskyi <ihororlovskyi@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/rooooster/newsman",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "^5.0.0",
+    "coriolan-ui": "*"
+  }
+}

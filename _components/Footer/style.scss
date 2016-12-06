@@ -1,64 +1,47 @@
 .footer {
     background: #fff;
-    padding: 25px 15px;
+    margin: 0 rem(-10);
+    padding: 2rem rem(10);
+    box-sizing: border-box;
+    box-shadow: rem(1) rem(1) 0 #d9dbdc;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    box-shadow: 1px 1px 0px #d9dbdc;
-    margin: 0 -10px;
 
     @include media(M) {
         align-items: flex-end;
-        padding: 25px;
-        padding-right: 15px;
+        padding-left: rem(25);
+        padding-right: rem(15);
         margin: 0;
-    }
-
-    @include media(L) {
-        padding: 35px;
-        padding-right: 15px;
+        height: 16rem;
     }
 
     &__nav-wrap {
         width: 100%;
+        align-items: center;
+        margin-bottom: 3rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 30px;
 
         @include media(M) {
             flex-direction: row;
         }
     }
 
-
     &__logo {
+        width: 16rem;
+        padding: .5rem 1rem 1.5rem;
+        box-sizing: border-box;
 
         @include media(M) {
-            width: 135px;
-        }
-
-        @include media(L) {
-            width: 235px;
-        }
-
-        @include media(XL) {
-            width: auto;
+            width: 20rem;
         }
     }
 
     .menu {
         display: inline-block;
-        margin-top: 20px;
-
-        @include media(M) {
-            margin-top: 0;
-        }
-
-        @include media(L) {
-            margin-top: 20px;
-        }
     }
 }

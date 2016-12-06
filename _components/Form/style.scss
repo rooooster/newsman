@@ -1,19 +1,19 @@
 .form {
     font-family: 'LatoRegular', sans-serif;
     background: #96b7ff;
-    padding: 60px 20px 30px;
-    border-radius: 10px;
+    padding: rem(60) rem(20) rem(30);
+    border-radius: rem(10);
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
-    box-shadow: 2px 3px 1px #b4b6b8;
+    box-shadow: rem(2) rem(3) rem(1) #b4b6b8;
 
     @include media(M) {
-        padding: 80px 42px 40px;
+        padding: rem(80) rem(42) rem(40);
     }
 
     &__row {
-        margin-bottom: 24px;
+        margin-bottom: rem(24);
         text-align: center;
 
         &:last-child {
@@ -24,13 +24,13 @@
     label {
         cursor: pointer;
         color: #fff;
-        font-size: 26px;
+        font-size: rem(26);
         text-align: left;
         display: block;
-        margin-bottom: 6px;
+        margin-bottom: rem(6);
 
         @include media(M) {
-            font-size: 33px;
+            font-size: rem(33);
         }
     }
 
@@ -40,11 +40,11 @@
         color: #50545a;
         width: 100%;
         box-sizing: border-box;
-        font-size: 33px;
+        font-size: rem(33);
         text-align: left;
-        box-shadow: inset 2px 3px 1px #b6b8ba;
+        box-shadow: inset rem(2) rem(3) rem(1) #b6b8ba;
         border: none;
-        padding: 8px 16px 8px 42px;
+        padding: rem(8) rem(16) rem(8) rem(42);
         box-sizing: border-box;
 
         &:focus {
@@ -55,6 +55,6 @@
     &__submit {
         @include btn;
         @include btn--large;
-        margin-top: 34px;
+        margin-top: rem(34);
     }
 }
