@@ -12095,7 +12095,7 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
   }
 }())
 
-$(document).ready(function () {
+;$(document).ready(function () {
 
 
     // features
@@ -12113,7 +12113,7 @@ $(document).ready(function () {
         currentClass: 'is-selected',
         updateHash: true,
         easing: 'easeInOutExpo',
-        speed: 800,
+        speed: 0,
         // beforeStart: function() {
         //     console.log('begin scrolling');
         // },
@@ -12121,6 +12121,14 @@ $(document).ready(function () {
         //     console.log('done scrolling');
         // }
     });
+
+
+    // history
+    $(document).on('click', '.menu__item', function(){
+        // console.log(window.location.hash);
+        var hash = window.location.hash;
+        history.replaceState(undefined, undefined, hash)
+    })
 
 
     // mobmenu
@@ -12136,10 +12144,10 @@ var waypoints = $('.how').waypoint({
     handler: function(direction) {
         if (direction === 'down') {
             $('.how').addClass('is-visible')
-            console.log('how down')
+            // console.log('how down')
         } else {
             $('.how').removeClass('is-visible')
-            console.log('how up')
+            // console.log('how up')
         }
     },
     offset: '50%'
@@ -12151,10 +12159,10 @@ var waypoints = $('.statistics').waypoint({
     handler: function(direction) {
         if (direction === 'down') {
             $('.statistics').addClass('is-visible')
-            console.log('statistics down')
+            // console.log('statistics down')
         } else {
             $('.statistics').removeClass('is-visible')
-            console.log('statistics up')
+            // console.log('statistics up')
         }
     },
     offset: '50%'

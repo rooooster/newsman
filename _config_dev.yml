@@ -1,7 +1,9 @@
 baseurl: ''
-google-analytics: ''
-yandex-metrika: ''
+permalink: ''
 include: ['_pages']
-exclude: ['README.md', 'node_modules', 'package.json', 'bower_components', 'bower.json', 'gulpfile.js']
+exclude: ['README.md', 'package.json', 'node_modules/', 'bower_components', 'bower.json', 'gulpfile.js']
 includes_dir: ./_components
 data_dir: ./_components
+
+google-analytics: ''
+yandex-metrika: ''

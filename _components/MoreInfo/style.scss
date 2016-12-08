@@ -91,6 +91,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        justify-content: center;
 
         @include media(M) {
             margin-top: rem(50);
@@ -99,11 +100,11 @@
         }
 
         &-img {
-            width: 100%;
+            // width: 100%;
             margin-top: rem(10);
 
             @include media(M) {
-                width: 50%;
+                // width: 50%;
                 padding: 0 rem(5);
                 box-sizing: border-box;
             }

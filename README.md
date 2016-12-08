@@ -8,8 +8,6 @@ _Front-end development of Newsman pages_
 
 [Gulp](http://gulpjs.com/) - build system based on [NodeJS](https://nodejs.org/)
 
-[Bower](https://bower.io/) - web package manager
-
 [Coriolan UI](https://coriolan-ui.github.io/) - [Sass](http://sass-lang.com/) mixins pack
 
 [GitHub Pages](https://pages.github.com/) - free hosting
@@ -17,8 +15,6 @@ _Front-end development of Newsman pages_
 ### Run
 
 `npm i`
-
-`bower i`
 
 `gulp watch`
 
