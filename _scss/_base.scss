@@ -70,16 +70,13 @@ img {
         padding-top: rem(80);
 
         @include media(M) {
-            // padding-top: rem(120);
-            padding-top: 0;
+            padding-top: 13rem;
         }
 
         @include media(L) {
-            // padding-top: rem(140);
         }
 
         @include media(XL) {
-            // padding-top: rem(180);
         }
     }
 }

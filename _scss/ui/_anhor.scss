@@ -11,10 +11,10 @@
     }
 
     @include media(M) {
-        margin-top: 0;
+        margin-top: -13rem;
 
         &:before {
-            height: 0;
+            height: 13rem;
         }
     }
 }
