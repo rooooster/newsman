@@ -4,5 +4,5 @@ permalink: /
 
 title: 'Newsman'
 description: 'Newsman'
-og-image: 'http://rooooster.com/newsman/assets/img/og-image/newsman.jpg'
+og-image: 'http://rooooster.com/newsman/assets/img/og-image/home.jpg'
 ---
