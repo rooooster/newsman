@@ -73,4 +73,4 @@ var waypoints = $('.statistics').waypoint({
 
 
 // statistics
-window.sr = ScrollReveal({ reset: true }).reveal('.features__clients ul li img, .moreinfo__list-item');
+window.sr = ScrollReveal({ reset: true }).reveal('.features__clients ul li img, .moreinfo-list__item');

@@ -1,0 +1,106 @@
+.moreinfo-list {
+    margin-bottom: rem(60);
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: rem(25);
+
+        @include media(M) {
+            margin-top: rem(55);
+        }
+
+        &-title {
+            @include title;
+            @include title--dotted;
+            margin-bottom: rem(60);
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include media(M) {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    }
+
+    &__thumb {
+        margin-bottom: rem(20);
+
+        @include media(M) {
+            width: 30%;
+        }
+
+        &-img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    &__text {
+        margin-bottom: rem(20);
+
+        @include media(M) {
+            width: 70%;
+        }
+
+        p {
+            margin: 0 0 rem(20);
+            font-size: rem(19);
+
+            .is-blue {
+                color: #425da8;
+            }
+        }
+    }
+
+    &__gallary {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include media(M) {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        &-thumb {
+            margin-bottom: rem(20);
+
+            @include media(M) {
+                &--subscriptions-1 {@include ratio(52.5%,405,265);}
+                &--subscriptions-2 {@include ratio(47.5%,370,270);}
+
+                &--content-1 {@include ratio(46.4%,415,547);}
+                &--content-2 {@include ratio(53.6%,479,547);}
+
+                &--mailings-1 {@include ratio(64.8%,636,292);}
+                &--mailings-2 {@include ratio(35.2%,345,292);}
+
+                &--environment-1 {@include ratio(51%,347,158);}
+                &--environment-2 {@include ratio(49%,330,158);}
+
+                &--analytics-1 {@include ratio(50%,338,184);}
+                &--analytics-2 {@include ratio(50%,338,184);}
+            }
+        }
+
+        &-img {
+            @include media(M) {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 100%;
+                height: auto;
+                transform: translate3d(-50%,-50%,0);
+                width: 92%;
+            }
+        }
+    }
+}

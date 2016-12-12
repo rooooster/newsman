@@ -30,4 +30,6 @@
 @import '_components/Statistics/style';
 
 // More Info Page
-@import '_components/MoreInfo/style';
+@import '_components/MoreInfo/index';
+@import '_components/MoreInfo/_header';
+@import '_components/MoreInfo/_list';

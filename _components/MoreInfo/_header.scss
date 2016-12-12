@@ -1,0 +1,42 @@
+.moreinfo-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: rem(20);
+
+    @include media(M) {
+        flex-direction: row;
+        padding-top: rem(40);
+    }
+
+    &__thumb {
+        padding: 0 rem(10);
+
+        @include media(M) {
+            width: 30%;
+        }
+
+        &-img {
+            display: block;
+            margin: 0 auto rem(20);
+        }
+    }
+
+    &__content {
+        padding: 0 rem(10);
+
+        @include media(M) {
+            width: 70%;
+        }
+
+        p {
+            font-size: rem(24);
+            margin: 0 0 rem(20);
+
+            .is-orange {
+                color: #ff6700;
+            }
+        }
+    }
+}

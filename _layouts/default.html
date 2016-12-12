@@ -31,11 +31,8 @@ layout: compress
 
     <script src="{{ site.baseurl }}/assets/js/bundle.min.js"></script>
 
-    {% if site.google-analytics == 'production' %}
+    {% if jekyll.environment == "production" %}
         {% include Analytics/google-analytics.html %}
-    {% endif %}
-
-    {% if site.yandex-metrika == 'production' %}
         {% include Analytics/yandex-metrika.html %}
     {% endif %}
 
