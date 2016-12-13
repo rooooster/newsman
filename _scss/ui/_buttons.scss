@@ -1,45 +1,58 @@
+$btnColor: #96b7ff;
+$btnBackgroundColor: #425da8;
+$btnBorderColor: darken($btnBackgroundColor, 3%);
+$btnShadowColor: #2f468f;
+$btnAmount: 5%;
+
 @mixin btn {
+    position: relative;
     outline: none;
+    border: none;
     font-family: 'LatoRegular', sans-serif;
     text-align: center;
-    background: #425da8;
-    color: #96b7ff;
+    color: $btnColor;
+    border: rem(1) solid $btnBorderColor;
+    background-color: $btnBackgroundColor;
     text-transform: uppercase;
-    border-style: solid;
-    border-color: #2f468f;
     //size
-    border-width: 0 rem(2) rem(2) 0;
     font-size: rem(20);
     padding: rem(11) rem(20);
-    border-radius: rem(4);
+    border-radius: rem(7);
+    box-shadow: rem(2) rem(3) 0 $btnShadowColor;
+    transition: color .2s ease-in-out,
+                background-color .2s ease-in-out,
+                border-color .2s ease-in-out;
 
     @include media(M) {
         //size
-        border-width: 0 rem(3) rem(3) 0;
         font-size: rem(26);
         padding: rem(13) rem(34);
-        border-radius: rem(6);
     }
 
     &:hover {
+        color: lighten($btnColor, $btnAmount);
+        border-color: lighten($btnBorderColor, $btnAmount);
+        background-color: lighten($btnBackgroundColor, $btnAmount);
+        box-shadow: rem(2) rem(3) 0 lighten($btnShadowColor, $btnAmount);
     }
 
     &:active {
+        top: rem(3);
+        color: darken($btnColor, $btnAmount);
+        border-color: darken($btnBorderColor, $btnAmount);
+        background-color: darken($btnBackgroundColor, $btnAmount);
+        box-shadow: rem(0) rem(0) 0 darken($btnShadowColor, $btnAmount);
     }
 }
 
 @mixin btn--large {
     //size
-    border-width: 0 rem(3) rem(3) 0;
     font-size: rem(24);
     padding: rem(13) rem(20);
-    border-radius: rem(6);
 
     @include media(M) {
         //size
-        border-width: 0 rem(4) rem(4) 0;
         font-size: rem(33);
         padding: rem(25) rem(44);
-        border-radius: rem(10);
     }
 }

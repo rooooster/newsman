@@ -139,6 +139,7 @@
     }
 
     &__pointer {
+        position: relative;
         max-width: 5rem;
         margin-top: rem(-60);
         margin-right: rem(250);
