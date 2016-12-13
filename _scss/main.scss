@@ -2,11 +2,15 @@
 @import '-variables';
 
 // Vendor
+@import '../node_modules/normalize.css/normalize';
+@import '../node_modules/coriolan-ui/tools/variables';
+@import '../node_modules/coriolan-ui/mixins/clearfix';
+@import '../node_modules/coriolan-ui/mixins/ratio';
+@import '../node_modules/coriolan-ui/mixins/media';
+@import '../node_modules/coriolan-ui/mixins/px-to-rem';
 @import 'vendor/lato-font/lato';
 @import 'vendor/engine-font/engine';
 @import 'vendor/svg-icons/svg-icons';
-@import '../node_modules/coriolan-ui/coriolan-ui';
-@import '../node_modules/normalize.css/normalize';
 
 // UI
 @import 'ui/buttons';
