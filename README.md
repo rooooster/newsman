@@ -18,4 +18,21 @@ _Front-end development of Newsman pages_
 
 `gulp watch`
 
+### Making svg-font
+
+1) Put your svg image `name.svg` into `./assets/img/svg-icons/` folder
+
+2) Do `gulp font`
+
+3) Now you can add your svg icon in html `<span class='icon-name'></span>`
+
+4) But better in sass:
+
+    .block {
+        &__my-icon {
+            @extend .icon;
+            @extend .icon-name;
+        }
+    }
+
 #### Have fun! :)
