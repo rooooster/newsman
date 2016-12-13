@@ -2,6 +2,7 @@
     padding-top: rem(30);
     margin-bottom: rem(30);
     @include anhor;
+    @include anhor--large;
     @include unvisible;
 
     &__header {

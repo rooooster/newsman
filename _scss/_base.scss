@@ -2,8 +2,6 @@ html {
     font-size: 14px;
 
     @include media(M) {
-        // transform: scale(.75);
-        // transform-origin: 50% 0;
         font-size: (14px*.75);
     }
 }
@@ -51,14 +49,6 @@ img {
     padding: 0 rem(10);
 
     @include media(M) {
-        padding: 0 2%;
-    }
-
-    @include media(L) {
-        padding: 0 4%;
-    }
-
-    @include media(XL) {
         padding: 0 rem(71);
     }
 
@@ -71,12 +61,6 @@ img {
 
         @include media(M) {
             padding-top: 13rem;
-        }
-
-        @include media(L) {
-        }
-
-        @include media(XL) {
         }
     }
 }

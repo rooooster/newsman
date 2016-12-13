@@ -12099,11 +12099,11 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 
 
     // features
-    $(".features").addClass("is-visible");
+    $('.features').addClass('is-visible');
 
 
     // moreinfo
-    $(".moreinfo").addClass("is-visible");
+    $('.moreinfo').addClass('is-visible');
 
 
     // menu
@@ -12139,7 +12139,27 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 });
 
 
-// how
+// header fx
+var waypoints = $('.main-container__inner').waypoint({
+    handler: function(direction) {
+        if (direction === 'down') {
+            $('.header__wrap').removeClass('is-large')
+            // console.log('how down')
+        } else {
+            $('.header__wrap').addClass('is-large')
+            // console.log('how up')
+        }
+    },
+    offset: '-1px'
+})
+var waypoints = $('.how, .statistics').waypoint({
+    handler: function() {
+        $('.header__wrap').removeClass('is-large')
+    }
+})
+
+
+// how fx
 var waypoints = $('.how').waypoint({
     handler: function(direction) {
         if (direction === 'down') {
@@ -12154,7 +12174,7 @@ var waypoints = $('.how').waypoint({
 })
 
 
-// statistics
+// statistics fx
 var waypoints = $('.statistics').waypoint({
     handler: function(direction) {
         if (direction === 'down') {
@@ -12169,5 +12189,5 @@ var waypoints = $('.statistics').waypoint({
 })
 
 
-// statistics
+// clients fx & moreinfo item fx
 window.sr = ScrollReveal({ reset: true }).reveal('.features__clients ul li img, .moreinfo-list__item');

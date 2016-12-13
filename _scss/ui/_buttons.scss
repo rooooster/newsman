@@ -19,9 +19,9 @@ $btnAmount: 5%;
     padding: rem(11) rem(20);
     border-radius: rem(7);
     box-shadow: rem(2) rem(3) 0 $btnShadowColor;
-    transition: color .2s ease-in-out,
-                background-color .2s ease-in-out,
-                border-color .2s ease-in-out;
+    transition: color .1s ease-in-out,
+                background-color .1s ease-in-out,
+                border-color .1s ease-in-out;
 
     @include media(M) {
         //size
