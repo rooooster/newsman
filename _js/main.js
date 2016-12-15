@@ -15,7 +15,7 @@
         filter: ':not(.is-external)',
         currentClass: 'is-selected',
         updateHash: true,
-        easing: 'easeInOutExpo',
+        easing: false,
         speed: 0,
         // beforeStart: function() {
         //     console.log('begin scrolling');
