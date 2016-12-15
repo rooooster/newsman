@@ -1,9 +1,9 @@
 var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    prefix = require('gulp-autoprefixer'),
-    sassUnicode = require('gulp-sass-unicode'),
-    gutil = require('gulp-util'),
     plumber = require('gulp-plumber'),
+    gutil = require('gulp-util'),
+    sass = require('gulp-sass'),
+    sassUnicode = require('gulp-sass-unicode'),
+    prefix = require('gulp-autoprefixer'),
     browserSync = require('browser-sync');
 
 gulp.task('sass', function () {
@@ -15,7 +15,6 @@ gulp.task('sass', function () {
             this.emit('end');
         }))
         .pipe(sass({
-            // includePaths: ['scss'],
             outputStyle: 'compressed',
             onError: browserSync.notify
         }))

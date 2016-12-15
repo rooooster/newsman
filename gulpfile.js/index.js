@@ -3,4 +3,4 @@ var gulp = require('gulp'),
 
 requireDir('./tasks', { recurse: true });
 
-gulp.task('default', ['sass', 'jekyll-build']);
+gulp.task('default', ['jekyll-build']);

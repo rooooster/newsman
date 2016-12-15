@@ -1,9 +1,4 @@
 {
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rooooster/newsman"
-  },
   "dependencies": {
     "coriolan-ui": "^0.1.15",
     "normalize.css": "^5.0.0"
