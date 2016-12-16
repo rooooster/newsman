@@ -1,12 +1,12 @@
 - {
-    name: "facebook",
-    url: "#",
+    name: 'facebook',
+    url: 'https://www.facebook.com/mailfire.io',
 }
 - {
-    name: "twitter",
-    url: "#",
+    name: 'twitter',
+    url: '#',
 }
 - {
-    name: "linkedin",
-    url: "#",
+    name: 'linkedin',
+    url: '#',
 }
